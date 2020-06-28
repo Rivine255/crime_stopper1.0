@@ -19,7 +19,7 @@
 					<img src="../img/logo.png" alt="NPS Logo" height="auto" width="13%"></img>
 					<div id="logo_text">
 						<!-- class="logo_colour", allows you to change the colour of the text -->
-						<h1><a class="logo_colour" href="index.php">CrimeSTOPPERS</a></h1>
+						<h1><a class="logo_colour" href="../index.php">CrimeSTOPPERS</a></h1>
 						<h2>National Police Service</h2>
 					</div>
 				</div>
@@ -27,11 +27,11 @@
 			<div id="navbar">
 				<nav>
 					<ul id="menu">
-						<li><a href="index.php">Home</a></li>
+						<li><a href="../index.php">Home</a></li>
 						<li class="selected"><a href="anonymous.php">Report</a></li>
-						<li><a href="login.php">Login</a></li>
-						<li><a href="register.php">Register</a></li>
-						<li style="float: right;"><a href="contact.php">Contact Us</a></li>
+						<li><a href="../login.php">Login</a></li>
+						<li><a href="../register.php">Register</a></li>
+						<li style="float: right;"><a href="../contact.php">Contact Us</a></li>
 					</ul>
 				</nav>
 			</div>
