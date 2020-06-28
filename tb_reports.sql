@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 28, 2020 at 12:59 PM
+-- Generation Time: Jun 28, 2020 at 02:30 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.30
 
@@ -33,9 +33,9 @@ CREATE TABLE `tb_reports` (
   `messages` varchar(1000) NOT NULL,
   `email` varchar(100) NOT NULL,
   `type` varchar(100) NOT NULL,
-  `region` varchar(100) NOT NULL,
-  `district` varchar(100) NOT NULL,
-  `ward` varchar(100) NOT NULL,
+  `region_id` varchar(100) NOT NULL,
+  `district_id` varchar(100) NOT NULL,
+  `ward_id` varchar(100) NOT NULL,
   `incident_area` varchar(100) NOT NULL,
   `date_time` datetime NOT NULL,
   `ip` varchar(100) NOT NULL
