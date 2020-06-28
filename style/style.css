@@ -12,7 +12,13 @@ header
 {
   position: relative;
   background: #646464 url(header.png);
-  height: 250px;
+  height: 180px;
+}
+
+body
+{
+  background-image: url(background2.png);
+  background-color: #646464;
 }
 
 div.logo
@@ -26,7 +32,7 @@ div.logo div.logo_text
 { display: inline-block;
   position: absolute; 
   left: 16%;
-  bottom: 5%;
+  bottom: 8%;
   text-decoration: none;
   font-weight: bolder;
   font-size: 150%;
@@ -53,7 +59,7 @@ div.logo div.logo_img
 {
   display: inline-block;
   position: absolute;
-  bottom: 5%;
+  bottom: 8%;
   left: 10%;
 }
 
@@ -63,7 +69,7 @@ nav ul
   position: absolute;
   list-style-type: none;
   width: 100%;
-  height: 20%;
+  height: 27%;
   margin: 0px;
   padding: 0px;
   bottom: 0px;
@@ -109,19 +115,22 @@ section.login_form
 section.login_form form 
 {
   position: relative;
-  border: 3px solid #f1f1f1;
+  border-top: 3px solid #f1f1f1;
+  border-bottom: 0px solid #f1f1f1;
+  border-radius: 10px;
   max-width: 40%;
   min-width: 40%;
   left: 30%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  background-color: white;
   transition: 0.3s;
 }
 
 section.login_form form:hover
 {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+  box-shadow: 0 8px 16px 0 rgba(255,255,255,0.2)
 }
 
 input[type=text], input[type=password]
@@ -134,18 +143,35 @@ input[type=text], input[type=password]
   box-sizing: border-box;
 }
 
+/*
+button
+{
+  border: 0px solid;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}*/
+
+
 button 
 {
   background-color: navy;
   color: white;
   outline: 0;
-  display: inline-block;
+  border: 0;
   padding: 8px 0;
   bottom: 0;
-  border: none;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   cursor: pointer;
   width: 100%;
-  font-size: 18px;
+  font-size: 120%;
 }
 
 button:hover
