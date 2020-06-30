@@ -1,216 +1,511 @@
-html
-{ height: 100%;}
-
-*
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+    width: 100%;
+    height: fit-content;
 }
 
-header
-{
-  position: relative;
-  background: #646464 url(../img/header.png);
-  height: 180px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body
-{
-  background-image: url(../img/background.png);
-  background-size: 1000px;
-  background-color: #ccc;
-  background-repeat: round;
+header {
+    position: relative;
+    background: #646464 url(../img/header.png);
+    height: 180px;
 }
 
-div.logo
-{
-  width:100%;
-  position: relative;
-  height:80%;
-}
-  
-div.logo div.logo_text 
-{ display: inline-block;
-  position: absolute; 
-  left: 16%;
-  bottom: 8%;
-  text-decoration: none;
-  font-weight: bolder;
-  font-size: 150%;
-  color: white;
+body {
+    background-repeat: round;
+    font: normal .80em 'trebuchet ms', arial, sans-serif;
+    background: url(../img/background.png) #ccc;
+    color: black;
 }
 
-div.logo div.logo_text h1 a
-{
-  text-decoration: none;
+p {
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
 }
 
-a.logo_colour
-{
-  text-decoration: none;
-  color: white;
+img {
+    border: 0;
 }
 
-a.logo_colour:hover
-{
-  color: lightgrey;
+a.logo_colour {
+    text-decoration: none;
+    color: white;
 }
 
-div.logo div.logo_img
-{
-  display: inline-block;
-  position: absolute;
-  bottom: 8%;
-  left: 10%;
+a.logo_colour:hover {
+    color: lightgrey;
 }
 
-
-nav ul
-{
-  position: absolute;
-  list-style-type: none;
-  width: 100%;
-  height: 27%;
-  margin: 0px;
-  padding: 0px;
-  bottom: 0px;
-  overflow: hidden;
-  background: #646464;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-nav li 
-{
-  float: left;
+.sticky+.content {
+    padding-top: 60px;
 }
 
-nav li a 
-{
-  display: block;
-  padding: 8px;
-  color: white;
-  text-align: center;
-  padding: 15px 20px;
-  text-decoration: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
+nav ul {
+    position: absolute;
+    list-style-type: none;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    background: #646464;
 }
 
-.selected
-{
-  background-color: navy;
-  color:lightgray;
+nav li {
+    float: left;
 }
 
-nav li a:hover
-{
-  background-color: navy;
-  color:lightgray;
+nav li a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-section.login_form
-{
-  padding: 20px;
+nav li a:hover {
+    background-color: rgba(0, 0, 128, 0.555);
+    color: lightgray;
 }
 
-section.login_form form 
-{
-  position: relative;
-  border-top: 3px solid #f1f1f1;
-  border-bottom: 0px solid #f1f1f1;
-  border-radius: 10px;
-  max-width: 40%;
-  min-width: 40%;
-  left: 30%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.2);
-  background-color: white;
-  transition: 0.3s;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: normal 179% 'century gothic', arial, sans-serif;
+    color: #43423F;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
 }
 
-section.login_form form:hover
-{
-  box-shadow: 0 0 8px 8px rgba(255,255,255,0.2)
+h2 {
+    font: normal 155% 'century gothic', arial, sans-serif;
+    color: #3091e0;
 }
 
-input[type=text], input[type=password], input[type=email]
-{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+h3 {
+    font: normal 125% 'century gothic', arial, sans-serif;
 }
 
-button 
-{
-  background-color: navy;
-  color: white;
-  outline: 0;
-  border: 0;
-  padding: 8px 0;
-  bottom: 0;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-  font-size: 120%;
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0 0 5px 0;
+    font: normal 150% 'century gothic', arial, sans-serif;
+    color: navy;
 }
 
-button:hover
-{
-  opacity: 0.8;
+h5,
+h6 {
+    font: normal 95% arial, sans-serif;
+    color: #3091e0;
 }
 
-section.login_form figure
-{
-  text-align: center;
-  max-width: 24px 0 12px 0;
+h6 {
+    color: #362C20;
 }
 
-section.login_form figure img
-{
-  width: 40%;
-  border-radius: 50%;
+a,
+a:hover {
+    outline: none;
+    text-decoration: underline;
+    color: #40D8FE;
 }
 
-section.inputs
-{
-  margin-top: 14px;
-  margin-left: 14px;
-  margin-right: 14px;
+a:hover {
+    text-decoration: none;
+    color: lightgrey;
 }
 
-a.register
-{
-  text-decoration: none;
-  font-size: 120%;
-  color: blue;
-  text-align: center;
-  text-decoration-style: solid;
+#main,
+#logo,
+#menubar,
+#site_content,
+#content_footer,
+#footer {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-a.register:hover
-{
-  text-decoration: underline;
-  color: black;
+#main {
+    padding-bottom: 20px;
 }
 
-div.profile_info
-{
-  position: relative;
-  border-top: 3px solid #f1f1f1;
-  border-bottom: 0px solid #f1f1f1;
-  border-radius: 10px;
-  max-width: 40%;
-  min-width: 40%;
-  left: 30%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.2);
-  background-color: white;
-  transition: 0.3s;
+#wait {
+    color: red;
+}
+
+#more {
+    display: none;
+}
+
+#header {
+    background: #6F655F url(../img/header.png);
+    height: 180px;
+}
+
+.header {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#logo {
+    width: 840px;
+    position: relative;
+    height: 80%;
+}
+
+#logo #logo_text {
+    display: inline-block;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 150%;
+}
+
+#logo h1,
+#logo h2 {
+    font: normal 300% 'century gothic', arial, sans-serif;
+    border-bottom: 0;
+    text-transform: none;
+    margin: 0;
+}
+
+#logo_text h1,
+#logo_text h1 a,
+#logo_text h1 a:hover {
+    padding: 8px 0 0 0;
+    color: #FFF;
+    text-decoration: none;
+}
+
+#logo_text h1 a .logo_colour {
+    color: #40D8FE;
+}
+
+#logo_text a:hover .logo_colour {
+    color: #FFF;
+}
+
+#logo_text h2 {
+    font-size: 120%;
+    padding: 4px 0 0 0;
+    color: #B7B9A7;
+}
+
+#logo .logo_img {
+    display: inline-block;
+    position: absolute;
+}
+
+a.logo_colour:hover {
+    color: lightgrey;
+}
+
+#menubar {
+    height: fit-content;
+    width: 100%;
+}
+
+#site_content {
+    width: 60%;
+    height: fit-content;
+    overflow: hidden;
+    background: rgb(245, 245, 245);
+}
+
+.selected {
+    background-color: navy;
+    color: lightgray;
+}
+
+#content {
+    width: 100%;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+#content ul {
+    margin: 2px 0 22px 0px;
+}
+
+#content ul li {
+    list-style-type: none;
+    background: url(../images/bullet.png) no-repeat;
+    margin: 0 0 0 0;
+    padding: 0 0 4px 25px;
+    line-height: 1.5em;
+}
+
+#footer {
+    width: 100%;
+    font: normal 90% 'trebuchet ms', arial, sans-serif;
+    height: fit-content;
+    padding: 20px 0 5px 0;
+    text-align: center;
+    background: navy;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#footer p {
+    padding: 0 0 5px 0;
+}
+
+#footer a {
+    color: #888;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.search {
+    color: #555;
+    border: 1px solid #DDD;
+    width: 134px;
+    padding: 5px;
+}
+
+.form_settings {
+    margin: 15px 0 0 0;
+}
+
+.form_settings p {
+    padding: 0 0 4px 0;
+}
+
+.form_settings span {
+    float: left;
+    width: 200px;
+    text-align: left;
+}
+
+.form_settings input,
+.form_settings textarea {
+    padding: 5px;
+    width: 35%;
+    font: 100% arial;
+    border: 1px solid #E5E5DB;
+    background: #FFF;
+    color: #47433F;
+}
+
+.form_settings .submit {
+    font: 100% arial;
+    border: 0;
+    width: 99px;
+    margin: 0 0 0 212px;
+    height: 33px;
+    padding: 2px 0 3px 0;
+    cursor: pointer;
+    background: navy;
+    color: #FFF;
+}
+
+.form_settings .submit:hover {
+    transition: 0.5s;
+    border-radius: 2px;
+    font: 100% arial;
+    width: 99px;
+    height: 33px;
+    background: #FFF;
+    color: navy;
+    border: 1px solid navy;
+}
+
+.form_settings textarea,
+.form_settings select {
+    font: 100% arial;
+    width: 35%;
+}
+
+.form_settings select {
+    width: 20%;
+    padding: 5px;
+    border: 1px solid #E5E5DB;
+    background: #FFF;
+    color: #47433F;
+}
+
+.form_settings .checkbox {
+    margin: 4px 0;
+    padding: 0;
+    width: 14px;
+    border: 0;
+    background: none;
+}
+
+.separator {
+    width: 100%;
+    height: 0;
+    border-top: 1px solid #D9D5CF;
+    border-bottom: 1px solid #FFF;
+    margin: 0 0 20px 0;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    outline: 0;
+    border: 0;
+    padding: 8px 0;
+    bottom: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 120%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+table {
+    margin: 10px 0 30px 0;
+}
+
+table tr th,
+table tr td {
+    background: #3B3B3B;
+    color: #FFF;
+    padding: 7px 4px;
+    text-align: left;
+}
+
+table tr td {
+    background: #E5E5DB;
+    color: #47433F;
+    border-top: 1px solid #FFF;
+}
+
+table.form {
+    width: 90%;
+    border: transparent;
+    background-color: transparent;
+}
+
+table.form tr td {
+    border: transparent;
+    background-color: transparent;
+}
+
+section.login_form {
+    padding: 20px;
+}
+
+section.login_form form {
+    position: relative;
+    border-top: 3px solid #f1f1f1;
+    border-bottom: 0px solid #f1f1f1;
+    border-radius: 10px;
+    max-width: 40%;
+    min-width: 40%;
+    left: 30%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.2);
+    background-color: white;
+    transition: 0.3s;
+}
+
+section.login_form form:hover {
+    box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.2)
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    outline: 0;
+    border: 0;
+    padding: 8px 0;
+    bottom: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 120%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+section.login_form figure {
+    text-align: center;
+    max-width: 24px 0 12px 0;
+}
+
+section.login_form figure img {
+    width: 40%;
+    border-radius: 50%;
+}
+
+section.inputs {
+    margin-top: 14px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+a.register {
+    text-decoration: none;
+    font-size: 120%;
+    color: blue;
+    text-align: center;
+    text-decoration-style: solid;
+}
+
+a.register:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.profile_info {
+    position: relative;
+    border-top: 3px solid #f1f1f1;
+    border-bottom: 0px solid #f1f1f1;
+    border-radius: 10px;
+    max-width: 40%;
+    min-width: 40%;
+    left: 30%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.2);
+    background-color: white;
+    transition: 0.3s;
 }
