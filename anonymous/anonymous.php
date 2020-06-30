@@ -86,7 +86,6 @@ if ($result_ward->num_rows > 0) {
 			<div id="content">
 				<h4>
 					<?php
-					date_default_timezone_get("Africa/Dar_es_Salaam");
           $time = date("H");
     if (($time <= 11) and ($time >= 5)) {
         echo 'Good Morning citizen,';
