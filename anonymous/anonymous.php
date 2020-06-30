@@ -128,7 +128,7 @@ if ($result_ward->num_rows > 0) {
 						</p>
 						<p>
 							<span>Message:</span>
-							<textarea required style="width: 38.5%;" class="contact textarea"
+							<textarea required style="max-width: 38.5%;min-height:20%;" class="contact textarea"
 								placeholder="Tell us what happening / happened" rows="8" cols="50" name="message"
 								id="message"></textarea>
 						</p>
