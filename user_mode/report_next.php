@@ -43,7 +43,7 @@
 			<div id="content">
 				<h2>THANKS FOR YOUR SUPPORT!!</h2>
 				<p>Your personal Info is Secured!! <br> <b>Have a Great Time</b></p>
-				<a href="index.php" class="btn-success"><i class="fa fa-check"></i>&nbsp; HOME</a>
+				<a href="home.php" class="btn-success"><i class="fa fa-check"></i>&nbsp; HOME</a>
 			</div>
 		</div>
 		<div id="footer">
