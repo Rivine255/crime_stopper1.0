@@ -50,7 +50,7 @@
 
 					<label for="password">Password</label>
 					<input type="password" name="password" placeholder="Enter Password" required>
-					<span><a class="register" href="anonymous/anonymous.php">I don't have an account</a></span>
+					<span><a class="register" href="register.php">I don't have an account</a></span>
 				</section>
 				<button type="submit" name="login_btn">Login</button>
 			</form>
