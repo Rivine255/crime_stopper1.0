@@ -100,7 +100,7 @@ if ($result_ward->num_rows > 0) {
 				</h4>
 				<p>Please notifying Us by Filling this Form. We granted Your Security.
 					<b>So you have nothing to worry!</b></p>
-				<form action="save_anonymous.php" method="POST">
+				<form action="save_report.php" method="POST">
 					<div class="form_settings">
 						<p>
 							<span>Incident Place:</span>
