@@ -129,7 +129,7 @@ if ($result_ward->num_rows > 0) {
 							</p>
 							<p>
 								<span>Message:</span>
-								<textarea required style="max-width: 38.5%;min-height:20%;" class="contact textarea"
+								<textarea required style="max-width: 38.5%;min-height:30%;" class="contact textarea"
 									placeholder="Tell us what happening / happened" rows="8" cols="50" name="message"
 									id="message"></textarea>
 							</p>
@@ -145,7 +145,7 @@ if ($result_ward->num_rows > 0) {
 				</div>
 			</div>
 			<div id="footer">
-				<a href="../login.php" style="color: red;">logout</a>
+				<a href="../login.php" id="logout">logout</a>
 				<br><br>
 				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> </p>
 			</div>
