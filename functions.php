@@ -3,7 +3,6 @@ session_start();
 
 // connect to database
 $db = mysqli_connect('localhost', 'root', '', 'crime');
-
 // variable declaration
 $username = "";
 $email    = "";
