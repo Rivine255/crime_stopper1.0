@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 28, 2020 at 11:33 PM
+-- Generation Time: Jul 10, 2020 at 02:53 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.30
 
@@ -20,6 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Database: `crime`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact_us`
+--
+
+CREATE TABLE `contact_us` (
+  `id` int(11) NOT NULL,
+  `fullname` varchar(200) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `district` varchar(200) NOT NULL,
+  `subject` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contact_us`
+--
+
+INSERT INTO `contact_us` (`id`, `fullname`, `email`, `district`, `subject`) VALUES
+(1, 'Noka', 'gfdg', '', 'fggd');
 
 -- --------------------------------------------------------
 
@@ -85,7 +106,8 @@ CREATE TABLE `tb_reports` (
 --
 
 INSERT INTO `tb_reports` (`id`, `user_id`, `messages`, `email`, `type`, `region_id`, `district_id`, `ward_id`, `incident_area`, `date_time`, `ip`) VALUES
-(1, '0', 'Kafa mtu', '', 'ANONYMOUS', '1', '1', '1', 'Hotel', '2020-06-28 22:28:31', '');
+(1, '0', 'Kafa mtu', '', 'ANONYMOUS', '1', '1', '1', 'Hotel', '2020-06-28 22:28:31', ''),
+(2, '6', 'Someone has Killed', '', 'USER', '2', '2', '1', 'Shule', '2020-07-02 18:17:06', '::1');
 
 -- --------------------------------------------------------
 
@@ -127,11 +149,18 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `password`) VALUES
 (1, 'admin', 'admin@gmail.com', 'admin', '202cb962ac59075b964b07152d234b70'),
-(2, 'kefa', 'mdf@haj.com', 'admin', '202cb962ac59075b964b07152d234b70');
+(2, 'kefa', 'mdf@haj.com', 'admin', '202cb962ac59075b964b07152d234b70'),
+(6, 'noka', 'test@gmil.com', 'user', '202cb962ac59075b964b07152d234b70');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `contact_us`
+--
+ALTER TABLE `contact_us`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `tb_district`
@@ -168,6 +197,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `contact_us`
+--
+ALTER TABLE `contact_us`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `tb_district`
 --
 ALTER TABLE `tb_district`
@@ -183,7 +218,7 @@ ALTER TABLE `tb_region`
 -- AUTO_INCREMENT for table `tb_reports`
 --
 ALTER TABLE `tb_reports`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tb_ward`
@@ -195,7 +230,7 @@ ALTER TABLE `tb_ward`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
