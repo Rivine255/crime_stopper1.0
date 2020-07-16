@@ -146,7 +146,7 @@ if ($result_ward->num_rows > 0) {
 				</div>
 			</div>
 			<div id="footer">
-				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> </p>
+				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
 			</div>
 			<!-- JAVASCRIPTS -->
 			<script type="text/javascript" src="js/ajax.js"></script>

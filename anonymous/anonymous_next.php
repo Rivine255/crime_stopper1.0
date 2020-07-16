@@ -48,7 +48,7 @@
 				</div>
 			</div>
 			<div id="footer">
-				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> </p>
+				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
 			</div>
 			<p>&nbsp;</p>
 		</div>

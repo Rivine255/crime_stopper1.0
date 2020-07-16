@@ -65,7 +65,7 @@ $username = $_SESSION['user']['username'];
 			<div id="footer">
 				<a href="../login.php" id="logout">logout</a>
 				<br><br>
-				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> </p>
+				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
 			</div>
 			<!-- JAVASCRIPTS -->
 			<script type="text/javascript" src="js/ajax.js"></script>

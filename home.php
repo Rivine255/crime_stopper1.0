@@ -40,7 +40,7 @@
 				</div>
 			</div>
 			<div id="site_content" class="content">
-				<!-- All Pages Contents Will gone Here -->
+				<!-- All Pages Contents go Here -->
 				<p>registration successfully</p>
 				<p>save detail successfully</p>
 				<a href="login.php">login</a>
@@ -48,9 +48,9 @@
 
 		</div>
 		<div id="footer">
-			<p>Copyright &copy; Rivine <?php echo date("Y"); ?> </p>
+			<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
 		</div>
-		<!-- JAVASCRIPTS -->
+		<!-- JAVASCRIPT SCRIPTS -->
 		<script type="text/javascript" src="js/_crime.js"></script>
 	</body>
 
