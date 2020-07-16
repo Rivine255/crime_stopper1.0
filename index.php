@@ -46,28 +46,16 @@
 			<div class="container">
 				<div class="slideshow-container">
 					<div class="mySlides fade">
-						<img src="img/2.jpg" style="width:100%" width="301" height="167">
+						<img src="img/woman_police.jpg" style="width:100%" width="301" height="167">
 						<div class="text"></div>
 					</div>
 					<div class="mySlides fade">
-						<img src="img/3.jpg" style="width:100%" width="301" height="167">
+						<img src="img/man_police.jpg" style="width:100%" width="301" height="167">
 						<div class="text"></div>
 					</div>
 					<div class="mySlides fade">
-						<img src="img/4.jpg" style="width:100%" width="301" height="167">
-						<div class="text"></div>
-					</div>
-					<div class="mySlides fade">
-						<img src="img/1.JPG" style="width:100%">
+						<img src="img/police_band.JPG" style="width:100%">
 						<div class="text">IGP-SIMON SIRRO</div>
-					</div>
-					<div class="mySlides fade">
-						<img src="img/6.jpg" style="width:100%" width="301" height="167">
-						<div class="text"></div>
-					</div>
-					<div class="mySlides fade">
-						<img src="img/7.jpg" style="width:100%" width="301" height="167">
-						<div class="text"></div>
 					</div>
 				</div>
 				<br>
@@ -83,7 +71,7 @@
 		</div>
 		<br><br><br>
 		<div id="footer">
-			<p>Copyright &copy; Rivine <?php echo date("Y"); ?> </p>
+			<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
 		</div>
 		<!-- JAVASCRIPTS -->
 		<script type="text/javascript" src="js/ajax.js"></script>
