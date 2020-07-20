@@ -1,19 +1,3 @@
-function read_more() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-
-    if (dots.style.display === "none") {
-        dots.style.display = "inline-block";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline-block";
-    }
-}
-
 function submit() {
     var message = document.getElementById("message").value;
     if (message == "") {
@@ -21,8 +5,12 @@ function submit() {
     }
 }
 
+window.onscroll = function() {
+    //sticky();
+};
+
 function sticky() {
-    var navbar = document.getElementById("navbar");
+    var navbar = document.getElementsByTagName("nav");
     var sticky = navbar.offsetTop;
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
@@ -30,7 +18,3 @@ function sticky() {
         navbar.classList.remove("sticky");
     }
 }
-
-window.onscroll = function() {
-    //sticky();
-};
