@@ -38,7 +38,7 @@
 			</div>
 			<div id="site_content">
 				<div align="center" class="header">
-					<h1>Anonymous Report</h1>
+					<h1>Your Report has been sent!</h1>
 				</div>
 				<div id="content">
 					<h2>THANKS FOR YOUR SUPPORT!!</h2>
