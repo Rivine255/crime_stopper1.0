@@ -31,7 +31,7 @@ $sql = "INSERT INTO $table_reports (user_id, messages, email, type, region_id, d
 $result = $mysql_obj->query($sql);
 
 if ($result == 1){
-	header("Location: anonymous_next.php");
+	header("Location: report_next.php");
 }else {
 	header("Location: index.php");
 }
