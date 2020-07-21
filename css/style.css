@@ -44,6 +44,7 @@ a.logo_colour:hover {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 3;
 }
 
 .sticky + .content {
@@ -54,8 +55,8 @@ ul#menu {
   list-style-type: none;
 }
 
-#header > nav {
-  position: absolute;
+nav {
+  position: relative;
   width: 100%;
   height: max-content;
   overflow: hidden;
@@ -160,7 +161,7 @@ a:hover {
 
 #header {
   background: #6f655f url(../img/header.png);
-  height: 220px;
+  height: 140px;
 }
 
 .header {
@@ -534,8 +535,6 @@ a.register:hover {
 .slide {
   position: relative;
   width: 70%;
-  top: 3px;
-  bottom: 3px;
   margin-left: auto;
   margin-right: auto;
   background-color: #646464;

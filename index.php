@@ -19,25 +19,25 @@
 				<div class="logo_img">
 					<img src="img/logo.png" alt="NPS Logo" height="auto" width="13%"></img>
 					<div id="logo_text">
-						<!-- class="logo_colour", allows you to change the colour of the text -->
 						<h1><a class="logo_colour" href="../index.php">CrimeSTOPPERS</a></h1>
 						<h2>National Police Service</h2>
 					</div>
 				</div>
 			</div>
-				<nav>
-					<ul id="menu">
-						<li class="selected"><a href="index.php">Home</a></li>
-						<li><a href="anonymous/anonymous.php">Report</a></li>
-						<li><a href="login.php">Login</a></li>
-						<li><a href="register.php">Register</a></li>
-						<li style="float: right;"><a href="contact_us/contact.php"><i class="fa fa-phone"></i>
-								Contact Us</a></li>
-					</ul>
-				</nav>
 		</div>
+		<nav>
+			<ul id="menu">
+				<li class="selected"><a href="index.php">Home</a></li>
+				<li><a href="anonymous/anonymous.php">Report</a></li>
+				<li><a href="login.php">Login</a></li>
+				<li><a href="register.php">Register</a></li>
+				<li style="float: right;"><a href="contact_us/contact.php"><i class="fa fa-phone"></i>
+						Contact Us</a></li>
+			</ul>
+		</nav>
 
 		<!-- Pages Content -->
+		<div class="content">
 			<div class="slideshow-container">
 				<div class="slide">
 					<img class="img_slide" src="img/woman_police.jpg" style="display: block">
@@ -63,8 +63,9 @@
 					<p>We protecc, we servv. <b>But most importantly snacc.</b></p>
 				</div>
 			</div>
+		</div>
 	</div>
-	
+
 	<div id="footer">
 		<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
 	</div>
@@ -73,21 +74,21 @@
 	<script type="text/javascript" src="js/_crime.js"></script>
 	<script>
 		var slideIndex = 0;
-        showSlides();
+		showSlides();
 
-        function showSlides() {
-            var i;
+		function showSlides() {
+			var i;
 			var slides = document.getElementsByClassName("img_slide");
-            for (i = 0; i < slides.length; i++) {
+			for (i = 0; i < slides.length; i++) {
 				slides[i].style.display = "none";
-            }
+			}
 			slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
+			if (slideIndex > slides.length) {
+				slideIndex = 1
+			}
 			slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
+			setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
 	</script>
 </body>
 

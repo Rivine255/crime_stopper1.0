@@ -6,15 +6,14 @@ function submit() {
 }
 
 window.onscroll = function() {
-    //sticky();
+    makeSticky();
 };
 
-function sticky() {
-    var navbar = document.getElementsByTagName("nav");
-    var sticky = navbar.offsetTop;
-    if (window.pageYOffset >= sticky) {
+function makeSticky() {
+    var navbar = document.getElementsByTagName("nav")[0];
+    if (window.pageYOffset >= 150) {
         navbar.classList.add("sticky");
     } else {
-        navbar.classList.remove("sticky");
+       navbar.classList.remove("sticky");
     }
 }
