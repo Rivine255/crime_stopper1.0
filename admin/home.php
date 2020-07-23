@@ -1,3 +1,4 @@
+
 <?php
 include('../functions.php');
 
@@ -7,6 +8,8 @@ if (!isAdmin()) {
 }
 
 ?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -22,6 +25,7 @@ if (!isAdmin()) {
 	</head>
 
 	<body>
+
 		<div id="main">
 			<div id="header">
 				<div id="logo">
@@ -68,6 +72,34 @@ if (!isAdmin()) {
 							<i style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>
 							&nbsp; <a href="create_user.php"> + add user</a>
 						</small>
+                        <?php $results = mysqli_query($db, "SELECT * FROM users"); ?>
+
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>email</th>
+			<th>user_type</th>
+			<th colspan="2">Action</th>
+		</tr>
+	</thead>
+	
+	<?php while ($row = mysqli_fetch_array($results)) { ?>
+		<tr>
+			<td><?php echo $row['username']; ?></td>
+			<td><?php echo $row['email']; ?></td>
+			<td><?php echo $row['user_type']; ?></td>
+			<td>
+				<a href="edit.php?id=<?php echo $row['id']; ?>" class="edit_btn" >Edit</a>
+			</td>
+			<td>
+			<a href="edit1.php?id=<?php echo $row['id']; ?>" class="edit_btn" >delete</a>
+			</td>
+		</tr>
+	<?php } ?>
+</table>
+
+<form>
 
 						<?php endif ?>
 					</div>
