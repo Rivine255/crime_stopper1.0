@@ -71,7 +71,7 @@ while ($row = $result_ward->fetch_assoc()) {
 				<div id="navbar">
 					<nav>
 						<ul id="menu">
-							<li><a href="../index.php">Home</a></li>
+							<li><a href="home.php">Home</a></li>
 							<li class="selected"><a href="report.php">Report</a></li>
 							<li style="float: right;"><a href="../contact.php">Contact Us</a></li>
 						</ul>
@@ -83,6 +83,7 @@ while ($row = $result_ward->fetch_assoc()) {
 					<h1>Report Details</h1>
 				</div>
 				<div id="content">
+					<div id="wait" align="center" style="color: red;"></div>
 					<div align="center" id="wait" style="color: red;"></div>
 					<table class="form" style="width:60%">
 						<tr>
@@ -118,7 +119,7 @@ while ($row = $result_ward->fetch_assoc()) {
 									<input type="hidden" name="report_id" value="<?php echo $report_id ?>">
 									<select id="select" name="progress">
 										<option value="<?php echo $progress ?>">--choose Progress--</option>
-										<option value="<?php echo $progress ?>">Not yet done</option>
+										<option value="NOT YET">Not yet done</option>
 										<option value="ON PROGRESS">On progress</option>
 										<option value="ACCOMPLISHED">Accomplished</option>
 									</select>
@@ -132,7 +133,7 @@ while ($row = $result_ward->fetch_assoc()) {
 				</div>
 			</div>
 			<div id="footer">
-				<a href="login.php" style="color: red;">logout</a>
+				<a href="../login.php" style="color: red;">logout</a>
 				<br><br>
 				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
 			</div>
