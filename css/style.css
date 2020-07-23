@@ -22,11 +22,6 @@ body {
   color: black;
 }
 
-div {
-  height: fit-content;
-  width: fit-content;
-}
-
 p {
   padding: 0 0 20px 0;
   line-height: 1.7em;
