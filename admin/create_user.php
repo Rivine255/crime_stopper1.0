@@ -57,9 +57,9 @@
 					<div class="input-group">
 						<label>User type</label>
 						<select name="user_type" id="user_type">
-							<option value=""></option>
+							<option value="">--choose role--</option>
 							<option value="admin">Admin</option>
-							<option value="user">User</option>
+							<option value="police">Police</option>
 						</select>
 					</div>
 					<div class="input-group">
