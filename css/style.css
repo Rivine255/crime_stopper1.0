@@ -22,6 +22,11 @@ body {
   color: black;
 }
 
+div {
+  height: fit-content;
+  width: fit-content;
+}
+
 p {
   padding: 0 0 20px 0;
   line-height: 1.7em;
@@ -314,7 +319,8 @@ a.logo_colour:hover {
   color: #47433f;
 }
 
-.form_settings .submit {
+.form_settings .submit,
+.submit {
   font: 100% arial;
   border: 0;
   width: 99px;
@@ -326,12 +332,14 @@ a.logo_colour:hover {
   color: #fff;
 }
 
-.form_settings .submit:hover {
+.submit {
+  margin: 0 0 0 21px;
+}
+
+.form_settings .submit:hover,
+.submit:hover {
   transition: 0.5s;
   border-radius: 2px;
-  font: 100% arial;
-  width: 99px;
-  height: 33px;
   background: #fff;
   color: navy;
   border: 1px solid navy;
@@ -409,14 +417,14 @@ table tr th,
 table tr td {
   background: #3b3b3b;
   color: #fff;
-  padding: 7px 4px;
+  padding: 10px 6px;
   text-align: left;
 }
 
 table tr td {
   background: #e5e5db;
   color: #47433f;
-  border-top: 1px solid #fff;
+  border: 0px solid;
 }
 
 table.form {
@@ -459,6 +467,15 @@ input[type="email"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+select {
+  width: fit-content;
+  padding: 5px 20px;
+  margin: 9px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
