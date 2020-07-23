@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 10, 2020 at 02:53 PM
+-- Generation Time: Jul 23, 2020 at 04:24 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.30
 
@@ -40,7 +40,9 @@ CREATE TABLE `contact_us` (
 --
 
 INSERT INTO `contact_us` (`id`, `fullname`, `email`, `district`, `subject`) VALUES
-(1, 'Noka', 'gfdg', '', 'fggd');
+(1, 'Noka', 'gfdg', '', 'fggd'),
+(2, 'Kapungu', 'noelikapungu3@gmail.com', '', 'Jaman mnatenda kazi vyema'),
+(3, 'srxcgf', '', '', 'vgj ');
 
 -- --------------------------------------------------------
 
@@ -93,6 +95,7 @@ CREATE TABLE `tb_reports` (
   `messages` varchar(1000) NOT NULL,
   `email` varchar(100) NOT NULL,
   `type` varchar(100) NOT NULL,
+  `progress` varchar(100) NOT NULL DEFAULT 'NOT YET',
   `region_id` varchar(100) NOT NULL,
   `district_id` varchar(100) NOT NULL,
   `ward_id` varchar(100) NOT NULL,
@@ -105,9 +108,9 @@ CREATE TABLE `tb_reports` (
 -- Dumping data for table `tb_reports`
 --
 
-INSERT INTO `tb_reports` (`id`, `user_id`, `messages`, `email`, `type`, `region_id`, `district_id`, `ward_id`, `incident_area`, `date_time`, `ip`) VALUES
-(1, '0', 'Kafa mtu', '', 'ANONYMOUS', '1', '1', '1', 'Hotel', '2020-06-28 22:28:31', ''),
-(2, '6', 'Someone has Killed', '', 'USER', '2', '2', '1', 'Shule', '2020-07-02 18:17:06', '::1');
+INSERT INTO `tb_reports` (`id`, `user_id`, `messages`, `email`, `type`, `progress`, `region_id`, `district_id`, `ward_id`, `incident_area`, `date_time`, `ip`) VALUES
+(1, '0', 'Kafa mtu', '', 'ANONYMOUS', 'ON PROGRESS', '1', '1', '1', 'Hotel', '2020-06-28 22:28:31', ''),
+(2, '6', 'Someone has Killed', '', 'USER', 'ACCOMPLISHED', '2', '2', '1', 'Shule', '2020-07-02 18:17:06', '::1');
 
 -- --------------------------------------------------------
 
@@ -150,7 +153,9 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `password`) VALUES
 (1, 'admin', 'admin@gmail.com', 'admin', '202cb962ac59075b964b07152d234b70'),
 (2, 'kefa', 'mdf@haj.com', 'admin', '202cb962ac59075b964b07152d234b70'),
-(6, 'noka', 'test@gmil.com', 'user', '202cb962ac59075b964b07152d234b70');
+(6, 'noka', 'test@gmil.com', 'user', '202cb962ac59075b964b07152d234b70'),
+(7, 'marwa', 'test@gmail.com', 'police', '202cb962ac59075b964b07152d234b70'),
+(8, 'john', 'test@gmail.com', 'user', '202cb962ac59075b964b07152d234b70');
 
 --
 -- Indexes for dumped tables
@@ -200,7 +205,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `contact_us`
 --
 ALTER TABLE `contact_us`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tb_district`
@@ -218,7 +223,7 @@ ALTER TABLE `tb_region`
 -- AUTO_INCREMENT for table `tb_reports`
 --
 ALTER TABLE `tb_reports`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tb_ward`
@@ -230,7 +235,7 @@ ALTER TABLE `tb_ward`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
