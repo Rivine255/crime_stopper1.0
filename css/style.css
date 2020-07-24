@@ -67,7 +67,7 @@ nav li {
   float: left;
 }
 
-nav li a {
+nav li a, .slide_link {
   display: block;
   padding: 8px;
   color: white;
@@ -79,7 +79,12 @@ nav li a {
   font-weight: bold;
 }
 
-nav li a:hover {
+.slide_link {
+  display: inline;
+  float: right;
+}
+
+nav li a:hover, .slide_link:hover {
   background-color: rgba(0, 0, 128, 0.555);
   color: lightgray;
 }
@@ -545,8 +550,53 @@ a.register:hover {
   margin-top: auto;
 }
 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.4s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #646464cd;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #000080a0;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: #646464;
+  margin: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
 .slide {
+  display: none;
   position: relative;
+  top: 0;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -559,24 +609,6 @@ a.register:hover {
   width: 100%;
   height: auto;
   opacity: 50%;
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
 .active {

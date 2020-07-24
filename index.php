@@ -40,17 +40,27 @@
 		<div class="content">
 			<div class="slideshow-container">
 				<div class="slide">
-					<img class="img_slide" src="img/woman_police.jpg" style="display: block">
-					<div class="text"></div>
+					<img class="img_slide" src="img/woman_police.jpg" style="width:100%">
+					<div class="text">Police Officer in Gender office.
+					<a href="login.php" class="slide_link">IMPROVISE ADAPT UHH 🤔🤔🤔</a>
+					</div>
 				</div>
 				<div class="slide">
-					<img class="img_slide" src="img/man_police.jpg" style="display: block">
-					<div class="text"></div>
+					<img class="img_slide" src="img/man_police.jpg" style="width:100%">
+					<div class="text">Te debitis pericula expetendis sea, 
+						sea no doctus invenire. Ea lorem ridens percipitur vim, 
+						alia postea deseruisse eu nec. 
+					<a href="login.php" class="slide_link">REPORT THE CRIME YOU SAW</a></div>
 				</div>
 				<div class="slide">
-					<img class="img_slide" src="img/police_band.JPG" style="display: block">
-					<div class="text">IGP-SIMON SIRRO</div>
+					<img class="img_slide" src="img/police_band.jpg" style="width:100%">
+					<div class="text">Police Music 😎😎.
+					<a href="login.php" class="slide_link">BE THE CHANGE YOU SEEK 🍑🍑🍑</a>
+					</div>
 				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 			</div>
 
 			<div id="site_content" class="content">
@@ -73,21 +83,30 @@
 	<script type="text/javascript" src="js/ajax.js"></script>
 	<script type="text/javascript" src="js/_crime.js"></script>
 	<script>
-		var slideIndex = 0;
-		showSlides();
+		var slideIndex = 1;
+		showSlides(slideIndex);
 
-		function showSlides() {
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
 			var i;
-			var slides = document.getElementsByClassName("img_slide");
-			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
+			var slides = document.getElementsByClassName("slide");
+			if (n > slides.length) {
+				slideIndex = 1;
 			}
-			slideIndex++;
-			if (slideIndex > slides.length) {
-				slideIndex = 1
+			if (n < 1) {
+				slideIndex = slides.length;
+			}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none"
 			}
 			slides[slideIndex - 1].style.display = "block";
-			setTimeout(showSlides, 2000); // Change image every 2 seconds
 		}
 	</script>
 </body>
