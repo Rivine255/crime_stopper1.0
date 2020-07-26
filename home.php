@@ -30,6 +30,7 @@
 				<ul id="menu">
 					<li class="selected"><a href="index.php">Home</a></li>
 					<li><a href="anonymous/anonymous.php">Report</a></li>
+					<li><a href="login.php">Login</a></li>
 					<li style="float: right;"><a href="contact_us/contact.php"><i class="fa fa-phone"></i> Contact
 							Us</a></li>
 				</ul>
