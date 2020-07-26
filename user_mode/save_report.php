@@ -41,7 +41,7 @@ if (isset($_FILES['image'])) {
 		$errors[] = 'Image size must more than 20kb';
 	}
 	if (empty($errors) == true) {
-		$file_path = "img/reports/$file_name";
+		$file_path = "img/reports/$today_date/$file_name";
 		if (!file_exists("../img/reports/$today_date")) {
 			mkdir("../img/reports/$today_date", 0777, true);
 		}

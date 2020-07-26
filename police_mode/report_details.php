@@ -101,7 +101,6 @@ while ($row = $result_ward->fetch_assoc()) {
 					<h1>Report Details</h1>
 				</div>
 				<div id="content">
-					<div id="wait" align="center" style="color: red;"></div>
 					<div align="center" id="wait" style="color: red;"></div>
 					<div id="myModal" class="modal">
 						<span class="close">&times;</span>
