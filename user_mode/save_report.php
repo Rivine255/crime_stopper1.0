@@ -1,5 +1,7 @@
 <?php
 session_start();
+$id = $_SESSION['user']['id'];
+$username = $_SESSION['user']['username'];
 $today_year = date('Y');
 $today_month = date('Y-m');
 $today_date = date('Y_m_d');
@@ -49,8 +51,7 @@ if (isset($_FILES['image'])) {
 		print_r($errors);
 	}
 }
-$id = 0;
-$type = "ANONYMOUS";
+$type = "USER";
 $sql = "INSERT INTO $table_reports (user_id, messages, email, type, region_id, district_id, ward_id, incident_area, img_path, date_time, ip) 
     VALUES ('$id', '$message', '$email', '$type', '$region', '$district', '$ward', '$place', '$file_path', '$today_time', '$ip')";
 $result = $mysql_obj->query($sql);
