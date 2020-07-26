@@ -108,10 +108,10 @@ while ($row = $result_ward->fetch_assoc()) {
 						<img class="modal-content" id="img01">
 						<div id="caption"></div>
 					</div>
-					<table>
+					<table style="width:fit-content" class="form">
 						<tr>
-							<td>
-								<table class="form" style="width:50%">
+							<td style="width:70%">
+								<table class="form">
 									<tr>
 										<td>Message</td>
 										<td>:</td>
