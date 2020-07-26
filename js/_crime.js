@@ -5,7 +5,8 @@ function submit() {
     }
 }
 
-window.onscroll = function() {
+
+window.onscroll = function () {
     makeSticky();
 };
 
@@ -14,7 +15,7 @@ function makeSticky() {
     if (window.pageYOffset >= 150) {
         navbar.classList.add("sticky");
     } else {
-       navbar.classList.remove("sticky");
+        navbar.classList.remove("sticky");
     }
 }
 
@@ -31,3 +32,35 @@ function validate_progress() {
         return true;
     }
 }
+////////////////////////////////////////////////////////////////////////
+function check_size() {
+    var file = document.getElementById("file");
+    var wait = document.getElementById("wait");
+    var numb = file.files[0].size / 1024 / 1024;
+    numb = numb.toFixed(2);
+    if (numb > 25) {
+        document.getElementById("btn").disabled = true;
+        wait.innerHTML = 'to big, maximum is 25MB. You file size is: ' + numb + ' MB';
+        file.style.borderColor = "red";
+    } else {
+        document.getElementById("btn").disabled = false;
+        file.style.borderColor = "#ccc";
+        wait.innerHTML = "";
+        return true;
+    }
+}
+///////////////////////////////////////////////////////
+var modal = document.getElementById("myModal");
+var img = document.getElementById("image");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+};
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function () {
+    modal.style.display = "none";
+};

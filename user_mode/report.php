@@ -83,7 +83,6 @@ if ($result_ward->num_rows > 0) {
 				<div align="center" class="header">
 					<h1>Report</h1>
 				</div>
-				<div id="wait"></div>
 				<div id="content">
 					<h4>
 						<?php
@@ -100,7 +99,7 @@ if ($result_ward->num_rows > 0) {
 					</h4>
 					<p>Please notifying Us by Filling this Form. We granted Your Security.
 						<b>So you have nothing to worry!</b></p>
-					<form action="save_report.php" method="POST">
+					<form action="save_report.php" method="POST" enctype="multipart/form-data">
 						<div class="form_settings">
 							<p>
 								<span>Incident Place:</span>
@@ -133,8 +132,13 @@ if ($result_ward->num_rows > 0) {
 									placeholder="Tell us what happening / happened" rows="8" cols="50" name="message"
 									id="message"></textarea>
 							</p>
+							<p>
+								<span>Incident image:</span>
+								<input type="file" id="file" onchange="check_size()" name="image" />
+								<div id="wait"></div>
+							</p>
 							<p style="padding-top: 15px">
-								<input class="submit" onclick="submit()" type="submit" value="submit">
+								<input class="submit" id="btn" onclick="submit()" type="submit" value="submit">
 							</p>
 						</div>
 					</form>
@@ -150,8 +154,7 @@ if ($result_ward->num_rows > 0) {
 				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
 			</div>
 			<!-- JAVASCRIPTS -->
-			<script type="text/javascript" src="js/ajax.js"></script>
-			<script type="text/javascript" src="js/_crime.js"></script>
+			<script type="text/javascript" src="../js/_crime.js"></script>
 	</body>
 
 </html>

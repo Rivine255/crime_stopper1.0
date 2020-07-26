@@ -11,6 +11,7 @@ $mysql_obj = new mysqli($servername, $username, $password, $database);
 if ($mysql_obj->connect_error) {
 	die("connection failed:" . $mysql_obj->connect_error);
 }
+$td = "";
 $report_id = $_REQUEST['id'];
 $sql = "SELECT * FROM tb_reports WHERE id=$report_id";
 $results = $mysql_obj->query($sql);
@@ -19,6 +20,23 @@ $id = $row['id'];
 $messages = $row['messages'];
 $email = $row['email'];
 $type = $row['type'];
+$img_path = $row['img_path'];
+if (!empty($img_path)) {
+	$xx = explode(".", $img_path);
+	$file = "../$img_path";
+	if ($xx[1] == 'mp4' || $xx[1] == 'wma') {
+		$td = "
+	        <video width='360' height='300' controls>
+                <source id='video' src='$file' type='video/mp4'>
+                Your browser does not support the video tag.
+	        </video>";
+	} else {
+		$td = "<img id='image' height='230px' src='$file' />";
+	}
+} else {
+	$td = "";
+}
+
 $region_id = $row['region_id'];
 $district_id = $row['district_id'];
 $ward_id = $row['ward_id'];
@@ -85,49 +103,67 @@ while ($row = $result_ward->fetch_assoc()) {
 				<div id="content">
 					<div id="wait" align="center" style="color: red;"></div>
 					<div align="center" id="wait" style="color: red;"></div>
-					<table class="form" style="width:60%">
+					<div id="myModal" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img01">
+						<div id="caption"></div>
+					</div>
+					<table>
 						<tr>
-							<td>Message</td>
-							<td>:</td>
-							<td><strong><?php echo $messages; ?></strong></td>
-						</tr>
-						<tr>
-							<td>Type</td>
-							<td>:</td>
-							<td><strong><?php echo $type; ?></strong></td>
-						</tr>
-						<tr>
-							<td>Area of Incidence</td>
-							<td>:</td>
-							<td><strong><?php echo $incident_area; ?></strong></td>
-						</tr>
-						<tr>
-							<td>Location</td>
-							<td>:</td>
-							<td><strong><?php echo "$ward_name, $district_name - $region_name"; ?></strong></td>
-						</tr>
-						<tr>
-							<td>Date & time</td>
-							<td>:</td>
-							<td><strong><?php echo $date_time; ?></strong></td>
-						</tr>
-						<tr>
-							<form action="report_progress.php?id=<?php echo $report_id; ?>">
-								<td>Progress</td>
-								<td>:</td>
-								<td>
-									<input type="hidden" name="report_id" value="<?php echo $report_id ?>">
-									<select id="select" name="progress">
-										<option value="<?php echo $progress ?>">--choose Progress--</option>
-										<option value="NOT YET">Not yet done</option>
-										<option value="ON PROGRESS">On progress</option>
-										<option value="ACCOMPLISHED">Accomplished</option>
-									</select>
-								</td>
-								<td><input type="submit" onmouseover="validate_progress()" class="submit"
-										value="submit">
-								</td>
-							</form>
+							<td>
+								<table class="form" style="width:50%">
+									<tr>
+										<td>Message</td>
+										<td>:</td>
+										<td><strong><?php echo $messages; ?></strong></td>
+									</tr>
+									<tr>
+										<td>Type</td>
+										<td>:</td>
+										<td><strong><?php echo $type; ?></strong></td>
+									</tr>
+									<tr>
+										<td>Area of Incidence</td>
+										<td>:</td>
+										<td><strong><?php echo $incident_area; ?></strong></td>
+									</tr>
+									<tr>
+										<td>Location</td>
+										<td>:</td>
+										<td><strong><?php echo "$ward_name, $district_name - $region_name"; ?></strong>
+										</td>
+									</tr>
+									<tr>
+										<td>Date & time</td>
+										<td>:</td>
+										<td><strong><?php echo $date_time; ?></strong></td>
+									</tr>
+									<tr>
+										<form action="report_progress.php?id=<?php echo $report_id; ?>">
+											<td>Progress</td>
+											<td>:</td>
+											<td>
+												<input type="hidden" name="report_id" value="<?php echo $report_id ?>">
+												<select id="select" name="progress">
+													<option value="<?php echo $progress ?>">--choose Progress--</option>
+													<option value="NOT YET">Not yet done</option>
+													<option value="ON PROGRESS">On progress</option>
+													<option value="ACCOMPLISHED">Accomplished</option>
+												</select>
+											</td>
+									<tr>
+										<td></td>
+										<td></td>
+										<td><input type="submit" onmouseover="validate_progress()" class="submit"
+												value="submit">
+										</td>
+									</tr>
+									</form>
+								</table>
+							</td>
+							<td>
+								<?php echo $td; ?>
+							</td>
 						</tr>
 					</table>
 				</div>

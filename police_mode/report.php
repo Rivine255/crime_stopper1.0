@@ -121,7 +121,6 @@ while ($row = $results->fetch_assoc()) {
 				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
 			</div>
 			<!-- JAVASCRIPTS -->
-			<script type="text/javascript" src="../js/ajax.js"></script>
 			<script type="text/javascript" src="../js/_crime.js"></script>
 	</body>
 
