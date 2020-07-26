@@ -68,9 +68,11 @@ if (!isAdmin()) {
 if(count($_POST)>0) {
 mysqli_query($db,"UPDATE users set username='" . $_POST['username'] . "', email='" . $_POST['email'] . "',user_type='" . $_POST['user_type'] . "' WHERE id='" . $_POST['id'] . "'");
 $message = "Record Modified Successfully";
+header("location: home.php");
 }
 $result = mysqli_query($db,"SELECT * FROM users WHERE id='" . $_GET['id'] . "'");
 $row= mysqli_fetch_array($result);
+
 ?>
 <html>
 <head>

@@ -28,9 +28,7 @@
 					<nav>
 						<ul id="menu">
 							<li><a href="../index.php">Home</a></li>
-							<li class="selected"><a href="anonymous.php">Report</a></li>
-							<li><a href="../login.php">Login</a></li>
-							<li><a href="../register.php">Register</a></li>
+							<li class="selected"><a href="report.php">Report</a></li>
 							<li style="float: right;"><a href="../contact.php">Contact Us</a></li>
 						</ul>
 					</nav>
@@ -54,7 +52,7 @@
 			<p>&nbsp;</p>
 		</div>
 		<!-- JAVASCRIPTS -->
-		<script type="text/javascript" src="js/_crime.js"></script>
+		<script type="text/javascript" src="../js/_crime.js"></script>
 	</body>
 
 </html>
