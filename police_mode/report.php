@@ -100,7 +100,7 @@ while ($row = $results->fetch_assoc()) {
 				</div>
 				<div id="wait"></div>
 				<div id="content">
-					<table border="0">
+					<table id="report_list" border="0">
 						<tr>
 							<th>s/n</th>
 							<th>Message</th>
