@@ -93,7 +93,7 @@ if (!isAdmin()) {
 				<a href="edit.php?id=<?php echo $row['id']; ?>" class="edit_btn" >Edit</a>
 			</td>
 			<td>
-			<a href="edit1.php?id=<?php echo $row['id']; ?>" class="edit_btn" >delete</a>
+			<a href="delete.php?id=<?php echo $row['id']; ?>" class="edit_btn" >delete</a>
 			</td>
 		</tr>
 	<?php } ?>
