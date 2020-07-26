@@ -401,6 +401,7 @@ a {
 
 a#logout {
   color: red;
+  font-size: large;
 }
 
 a#logout:hover {
@@ -529,6 +530,10 @@ a.register {
 a.register:hover {
   text-decoration: underline;
   color: black;
+}
+
+.user_info, .user_avatar {
+  margin-left: 5%;
 }
 
 .profile_info {
