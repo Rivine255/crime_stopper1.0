@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 23, 2020 at 04:24 PM
+-- Generation Time: Jul 26, 2020 at 12:23 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.30
 
@@ -96,6 +96,7 @@ CREATE TABLE `tb_reports` (
   `email` varchar(100) NOT NULL,
   `type` varchar(100) NOT NULL,
   `progress` varchar(100) NOT NULL DEFAULT 'NOT YET',
+  `img_path` varchar(100) NOT NULL,
   `region_id` varchar(100) NOT NULL,
   `district_id` varchar(100) NOT NULL,
   `ward_id` varchar(100) NOT NULL,
@@ -103,14 +104,6 @@ CREATE TABLE `tb_reports` (
   `date_time` datetime NOT NULL,
   `ip` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `tb_reports`
---
-
-INSERT INTO `tb_reports` (`id`, `user_id`, `messages`, `email`, `type`, `progress`, `region_id`, `district_id`, `ward_id`, `incident_area`, `date_time`, `ip`) VALUES
-(1, '0', 'Kafa mtu', '', 'ANONYMOUS', 'ON PROGRESS', '1', '1', '1', 'Hotel', '2020-06-28 22:28:31', ''),
-(2, '6', 'Someone has Killed', '', 'USER', 'ACCOMPLISHED', '2', '2', '1', 'Shule', '2020-07-02 18:17:06', '::1');
 
 -- --------------------------------------------------------
 
@@ -223,7 +216,7 @@ ALTER TABLE `tb_region`
 -- AUTO_INCREMENT for table `tb_reports`
 --
 ALTER TABLE `tb_reports`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tb_ward`
