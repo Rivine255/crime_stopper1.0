@@ -401,6 +401,7 @@ a {
 
 a#logout {
   color: red;
+  font-size: large;
 }
 
 a#logout:hover {
@@ -408,9 +409,12 @@ a#logout:hover {
   color: red;
 }
 
-table {
+#report_list {
   width: 90%;
-  margin: 0;
+}
+
+#user_list {
+  width: 100%;
 }
 
 table tr th,
@@ -528,14 +532,18 @@ a.register:hover {
   color: black;
 }
 
+.user_info, .user_avatar {
+  margin-left: 5%;
+}
+
 .profile_info {
-  position: relative;
+  position: absolute;
   border-top: 3px solid #f1f1f1;
   border-bottom: 0px solid #f1f1f1;
   border-radius: 10px;
-  max-width: 40%;
-  min-width: 40%;
-  left: 30%;
+  max-width: 20%;
+  bottom: 0;
+  right: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.2);
