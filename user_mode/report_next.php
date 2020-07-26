@@ -52,7 +52,7 @@
 			<p>&nbsp;</p>
 		</div>
 		<!-- JAVASCRIPTS -->
-		<script type="text/javascript" src="js/_crime.js"></script>
+		<script type="text/javascript" src="../js/_crime.js"></script>
 	</body>
 
 </html>
