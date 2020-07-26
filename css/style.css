@@ -719,6 +719,27 @@ a.register:hover {
   cursor: pointer;
 }
 
+#input {
+  background-image: url("/css/searchicon.png");
+  background-repeat: no-repeat;
+  width: 40%;
+  padding: 10px 10px 8px 20px;
+  border: 1px solid navy;
+  margin-bottom: 8px;
+}
+
+#input::placeholder {
+  color: navy;
+}
+
+#input:focus {
+  transition: ease-in 0.3s;
+  background-color: rgba(0, 0, 128, 0.055);
+  outline: 0;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.671);
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
   .modal-content {
