@@ -9,7 +9,6 @@
 		<meta name="keywords" content="police, crime, crime report, crimestoppers,">
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="../css/button.css" />
 	</head>
 

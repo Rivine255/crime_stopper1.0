@@ -1,3 +1,83 @@
+@font-face {
+  font-family: 'merriweather-italic';
+  src: url('fonts/merriweather-italic-webfont.woff2') format('woff2'),
+       url('fonts/merriweather-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'merriweather-regular';
+  src: url('fonts/merriweather-regular-webfont.woff2') format('woff2'),
+       url('fonts/merriweather-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'saira_stencil_one-regular';
+  src: url('fonts/sairastencilone-regular-webfont.woff2') format('woff2'),
+       url('fonts/sairastencilone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'lora-bold';
+  src: url('fonts/lora-bold-webfont.woff2') format('woff2'),
+       url('fonts/lora-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'lora-bolditalic';
+  src: url('fonts/lora-bolditalic-webfont.woff2') format('woff2'),
+       url('fonts/lora-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lora-italic';
+  src: url('fonts/lora-italic-webfont.woff2') format('woff2'),
+       url('fonts/lora-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lora-regular';
+  src: url('fonts/lora-regular-webfont.woff2') format('woff2'),
+       url('fonts/lora-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: 'merriweather-bold';
+  src: url('fonts/merriweather-bold-webfont.woff2') format('woff2'),
+       url('fonts/merriweather-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'merriweather-bolditalic';
+  src: url('fonts/merriweather-bolditalic-webfont.woff2') format('woff2'),
+       url('fonts/merriweather-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   width: 100%;
   height: fit-content;
@@ -17,7 +97,7 @@ header {
 
 body {
   background-repeat: round;
-  font: normal 0.8em "trebuchet ms", arial, sans-serif;
+  font: normal 0.8em "merriweather-regular", arial, sans-serif;
   background: url(../img/background.png) #ccc;
   color: black;
 }
@@ -83,6 +163,7 @@ nav li a,
 .slide_link {
   display: inline;
   float: right;
+  font-family: "lora-bold", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav li a:hover,
@@ -97,19 +178,19 @@ h3,
 h4,
 h5,
 h6 {
-  font: normal 179% "century gothic", arial, sans-serif;
-  color: #43423f;
+  font: normal 179% "lora-bold", arial, sans-serif;
+  color: #646464;
   margin: 0 0 15px 0;
   padding: 15px 0 5px 0;
 }
 
 h2 {
-  font: normal 155% "century gothic", arial, sans-serif;
+  font: normal 155% "lora-bold", arial, sans-serif;
   color: #3091e0;
 }
 
 h3 {
-  font: normal 125% "century gothic", arial, sans-serif;
+  font: normal 125% "lora-bold", arial, sans-serif;
 }
 
 h4,
@@ -117,13 +198,13 @@ h5,
 h6 {
   margin: 0;
   padding: 0 0 5px 0;
-  font: normal 150% "century gothic", arial, sans-serif;
+  font: normal 150% "lora-regular", arial, sans-serif;
   color: navy;
 }
 
 h5,
 h6 {
-  font: normal 95% arial, sans-serif;
+  font: normal 95% "lora-regular", arial, sans-serif;
   color: #3091e0;
 }
 
@@ -131,14 +212,20 @@ h6 {
   color: #362c20;
 }
 
-a,
-a:hover {
+a {
+  outline: none;
+  text-decoration: underline;
+  color: navy;
+}
+
+#report_list a,
+#report_list a:hover {
   outline: none;
   text-decoration: underline;
   color: #40d8fe;
 }
 
-a:hover {
+#report_list a:hover {
   text-decoration: none;
   color: lightgrey;
 }
@@ -173,7 +260,7 @@ a:hover {
 
 .header {
   text-transform: uppercase;
-  text-decoration: underline;
+  font-size: large;
 }
 
 #logo {
@@ -191,26 +278,16 @@ a:hover {
 
 #logo h1,
 #logo h2 {
-  font: normal 300% "century gothic", arial, sans-serif;
+  font: normal 300% "saira_stencil_one-regular", arial, sans-serif;
   border-bottom: 0;
   text-transform: none;
   margin: 0;
 }
 
 #logo_text h1,
-#logo_text h1 a,
-#logo_text h1 a:hover {
+#logo_text h1 a {
   padding: 8px 0 0 0;
-  color: #fff;
   text-decoration: none;
-}
-
-#logo_text h1 a .logo_colour {
-  color: #40d8fe;
-}
-
-#logo_text a:hover .logo_colour {
-  color: #fff;
 }
 
 #logo_text h2 {
@@ -266,7 +343,7 @@ a.logo_colour:hover {
 
 #footer {
   width: 100%;
-  font: normal 90% "trebuchet ms", arial, sans-serif;
+  font: normal 90% "lora-bolditalic", arial, sans-serif;
   height: fit-content;
   padding: 20px 0 5px 0;
   text-align: center;
@@ -315,7 +392,7 @@ a.logo_colour:hover {
 .form_settings textarea {
   padding: 5px;
   width: 35%;
-  font: 100% arial;
+  font: 90% "merriweather-regular", arial;
   border: 1px solid #e5e5db;
   background: #fff;
   color: #47433f;
@@ -323,7 +400,7 @@ a.logo_colour:hover {
 
 .form_settings .submit,
 .submit {
-  font: 100% arial;
+  font: 90% "merriweather-regular", arial;
   border: 0;
   width: 99px;
   margin: 0 0 0 212px;
@@ -349,7 +426,7 @@ a.logo_colour:hover {
 
 .form_settings textarea,
 .form_settings select {
-  font: 100% arial;
+  font: 90% "merriweather-regular", arial;
   width: 35%;
 }
 
@@ -597,6 +674,7 @@ a.register:hover {
   text-align: center;
   background-color: #646464;
   margin: 0;
+  padding-top: 5px;
 }
 
 .fade {
@@ -621,7 +699,6 @@ a.register:hover {
   position: relative;
   width: 100%;
   height: auto;
-  opacity: 50%;
 }
 
 .active {

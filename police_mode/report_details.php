@@ -70,7 +70,6 @@ while ($row = $result_ward->fetch_assoc()) {
 		<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
 		<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
-		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="../css/button.css" />
 	</head>
 

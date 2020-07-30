@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'merriweather-italic';
+    src: url('merriweather-italic-webfont.woff2') format('woff2'),
+         url('merriweather-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweather-regular';
+    src: url('merriweather-regular-webfont.woff2') format('woff2'),
+         url('merriweather-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'saira_stencil_one-regular';
+    src: url('sairastencilone-regular-webfont.woff2') format('woff2'),
+         url('sairastencilone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'lora-bold';
+    src: url('lora-bold-webfont.woff2') format('woff2'),
+         url('lora-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lora-bolditalic';
+    src: url('lora-bolditalic-webfont.woff2') format('woff2'),
+         url('lora-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lora-italic';
+    src: url('lora-italic-webfont.woff2') format('woff2'),
+         url('lora-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lora-regular';
+    src: url('lora-regular-webfont.woff2') format('woff2'),
+         url('lora-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweather-bold';
+    src: url('merriweather-bold-webfont.woff2') format('woff2'),
+         url('merriweather-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweather-bolditalic';
+    src: url('merriweather-bolditalic-webfont.woff2') format('woff2'),
+         url('merriweather-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

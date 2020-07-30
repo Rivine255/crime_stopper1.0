@@ -7,7 +7,6 @@
 		<meta name="keywords" content="website keywords, website keywords" />
 		<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
-		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="../css/button.css" />
 	</head>
 
