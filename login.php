@@ -10,6 +10,7 @@
 		<meta name="keywords" content="police, crime, crime report, crimestoppers,">
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/button.css" />
 	</head>
 
@@ -30,7 +31,7 @@
 						<ul id="menu">
 							<li><a href="index.php">Home</a></li>
 							<li><a href="anonymous/anonymous.php">Report</a></li>
-							<li class="selected"><a href="login.php">Login</a></li>
+							<li class="selected"><a href="../login.php">Login</a></li>
 							<li><a href="register.php">Register</a></li>
 							<li style="float: right;"><a href="contact_us/contact.php"><i class="fa fa-phone"></i>
 									Contact Us</a></li>
@@ -49,6 +50,7 @@
 
 						<label for="password">Password</label>
 						<input type="password" name="password" placeholder="Enter Password" required>
+						<p><a  class="register" href="passwordrecovery/reset-password.php">Forgot your password?</a></p><br><br>
 						<span><a class="register" href="register.php">I don't have an account</a></span>
 					</section>
 					<button type="submit" name="login_btn" class="submit" style="width: 100%">Login</button>
