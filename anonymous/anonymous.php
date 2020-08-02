@@ -59,7 +59,6 @@ if ($result_ward->num_rows > 0) {
 					<div class="logo_img">
 						<img src="../img/logo.png" alt="NPS Logo" height="auto" width="13%"></img>
 						<div id="logo_text">
-							<!-- class="logo_colour", allows you to change the colour of the text -->
 							<h1><a class="logo_colour" href="../index.php">CrimeSTOPPERS</a></h1>
 							<h2>National Police Service</h2>
 						</div>
@@ -100,7 +99,7 @@ if ($result_ward->num_rows > 0) {
 					<form action="save_anonymous.php" method="POST" enctype="multipart/form-data">
 						<div class="form_settings">
 							<p>
-								<span>Incident Place:</span>
+								<p>Incident Place:</p>
 								<select name="region_id" onchange="show_district()">
 									<option value="">-- Region --</option>
 									<?php echo $regions; ?>
@@ -115,28 +114,29 @@ if ($result_ward->num_rows > 0) {
 								</select>
 							</p>
 							<p>
-								<span>Incident Area:</span>
-								<input style="width: 40%;" class="contact"
+								<p>Incident Area:</p>
+								<input style="width: 97%;" class="contact"
 									placeholder="eg. shopping center, school, hotel, etc." type="text" name="place" />
 							</p>
 							<p>
-								<span>Email Address:</span>
-								<input style="width: 40%;" class="contact" placeholder="Your email(Optional)"
+								<p>Email Address:</p>
+								<input style="width: 97%;" class="contact" placeholder="Your email(Optional)"
 									type="email" name="email" />
 							</p>
 							<p>
-								<span>Message:</span>
-								<textarea required style="max-width: 38.5%;min-height:20%;" class="contact textarea"
+								<p>Message:</p>
+								<textarea required style="max-width: 97%; min-width: 97%; min-height: 100px; margin: 0px;" class="contact textarea"
 									placeholder="Tell us what happening / happened" rows="8" cols="50" name="message"
 									id="message"></textarea>
 							</p>
 							<p>
-								<span>Incident image:</span>
+								<p>Incident image:</p>
 								<input type="file" id="file" onchange="check_size()" name="file" />
 								<div id="wait">You can drag your file in the box above.</div>
 							</p>
-							<p style="padding-top: 15px">
+							<p class="form_buttons" style="padding-top: 15px">
 								<input class="submit" id="btn" onclick="submit()" type="submit" value="submit">
+								<button type="reset" class="submit">RESET</button>
 							</p>
 						</div>
 					</form>
