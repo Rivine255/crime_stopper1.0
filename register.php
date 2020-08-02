@@ -54,7 +54,7 @@
 					<input type="password" name="password_2" required>
 					<span><a class="register" href="login.php">Login Instead</a></span>
 				</section>
-				<button type="submit" class="submit" style="width: 100%;">Register</button>
+				<button type="submit" name="register_btn" class="submit" style="width: 100%;">Register</button>
 			</form>
 		</section>
 	</div>

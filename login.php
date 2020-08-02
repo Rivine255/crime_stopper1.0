@@ -51,7 +51,7 @@
 						<input type="password" name="password" placeholder="Enter Password" required>
 						<span><a class="register" href="register.php">I don't have an account</a></span>
 					</section>
-					<button type="submit" class="submit" style="width: 100%">Login</button>
+					<button type="submit" name="login_btn" class="submit" style="width: 100%">Login</button>
 				</form>
 			</section>
 		</div>
