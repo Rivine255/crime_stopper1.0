@@ -148,13 +148,14 @@ if ($result_ward->num_rows > 0) {
 								<input type="file" id="file" onchange="check_size()" name="image" />
 								<div id="wait"></div>
 							</p>
-							<p style="padding-top: 15px">
+							<p class="form_buttons" style="padding-top: 15px">
 								<input class="submit" id="btn" onclick="submit()" type="submit" value="submit">
+								<button type="reset" class="submit">RESET</button>
 							</p>
 						</div>
 					</form>
 					<div align="center">
-						<p><br>Special thanks to You. For Your faithfully Support.<br>
+						<p><br>Special thanks to You. For Your faithful Support.<br>
 							Further Steps will take place Immediately</p>
 					</div>
 				</div>
