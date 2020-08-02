@@ -34,19 +34,21 @@ if (!isAdmin()) {
 						<h2>National Police Service</h2>
 					</div>
 				</div>
-				<div class="profile_info">
+			</div>
+
+			<div class="profile_info">
 					<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%"></figure>
 					<div class="user_info">
 						<?php if (isset($_SESSION['user'])) : ?>
 							<strong><?php echo $_SESSION['user']['username']; ?></strong>
-							<small>
-								<i style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>
+							<strong style="font-size:15px">
+								<i style="color: #888;">(Admin)</i>
 								&nbsp; <a href="create_user.php"> + add user</a>
-							</small>
+							</strong>
 						<?php endif ?>
 					</div>
 				</div>
-			</div>
+			
 			<div id="navbar">
 				<nav>
 					<ul id="menu">

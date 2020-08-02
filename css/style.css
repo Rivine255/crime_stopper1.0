@@ -616,10 +616,10 @@ a.register:hover {
   position: absolute;
   border-top: 3px solid #f1f1f1;
   border-bottom: 0px solid #f1f1f1;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   max-width: 20%;
-  bottom: 0;
-  right: 0;
+  top: 57px;
+  right: 1px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.2);
