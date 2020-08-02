@@ -33,6 +33,20 @@ if (!isAdmin()) {
 					</div>
 				</div>
 			</div>
+
+			<div class="profile_info">
+					<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%"></figure>
+					<div class="user_info">
+						<?php if (isset($_SESSION['user'])) : ?>
+							<strong><?php echo $_SESSION['user']['username']; ?></strong>
+							<small style="font-size:15px">
+								<i style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>
+								&nbsp;
+							</small>
+						<?php endif ?>
+					</div>
+				</div>
+
 			<div id="navbar">
 				<nav>
 					<ul id="menu">
