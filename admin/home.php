@@ -60,7 +60,7 @@ if (!isAdmin()) {
 		</div>
 		<div id="site_content" class="content">
 			<div align="center" class="header">
-				<h1>Home</h1>
+				<h1>CrimeSTOPPERS Users</h1>
 			</div>
 			<!-- notification message -->
 			<?php if (isset($_SESSION['success'])) : ?>
@@ -78,9 +78,9 @@ if (!isAdmin()) {
 				<thead>
 					<tr>
 						<th>Name</th>
-						<th>email</th>
-						<th>user_type</th>
-						<th colspan="2">Action</th>
+						<th>Email Address</th>
+						<th>User Type</th>
+						<th colspan="2">Actions</th>
 					</tr>
 				</thead>
 

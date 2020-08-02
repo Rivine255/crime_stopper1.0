@@ -212,7 +212,7 @@ h6 {
   color: #362c20;
 }
 
-a {
+a:hover {
   outline: none;
   text-decoration: underline;
   color: navy;
