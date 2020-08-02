@@ -424,6 +424,7 @@ a.logo_colour:hover {
 
 .form_settings select {
   width: 32%;
+  height: 37px;
   padding: 5px;
   border: 1px solid #e5e5db;
   background: #fff;
@@ -451,17 +452,11 @@ a.logo_colour:hover {
 }
 
 button {
-  background-color: navy;
-  color: white;
-  outline: 0;
-  border: 0;
-  padding: 8px 0;
-  bottom: 0;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-  font-size: 120%;
+  transition: 0.5s;
+  border-radius: 2px;
+  background: #fff;
+  color: navy;
+  border: 1px solid navy;
 }
 
 button:hover {
@@ -543,7 +538,7 @@ section.login_form form:hover {
 input[type="text"],
 input[type="password"],
 input[type="email"] {
-  width: 100%;
+  width: 97%;
   padding: 12px 20px;
   margin-bottom: 8px;
   display: inline-block;
@@ -558,24 +553,6 @@ select {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
-}
-
-button {
-  background-color: navy;
-  color: white;
-  outline: 0;
-  border: 0;
-  padding: 8px 0;
-  bottom: 0;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-  font-size: 120%;
-}
-
-button:hover {
-  opacity: 0.8;
 }
 
 section.login_form figure {
