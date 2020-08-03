@@ -72,11 +72,11 @@ if ($result_ward->num_rows > 0) {
 					<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%"></figure>
 					<div class="user_info">
 						<?php if (isset($_SESSION['user'])) : ?>
-							<strong><?php echo $_SESSION['user']['username']; ?></strong>
-							<small style="font-size:15px">
-								<i style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>
-								&nbsp;
-							</small>
+						<strong><?php echo $_SESSION['user']['username']; ?></strong>
+						<small style="font-size:15px">
+							<i style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>
+							&nbsp;
+						</small>
 						<?php endif ?>
 					</div>
 				</div>
@@ -87,7 +87,8 @@ if ($result_ward->num_rows > 0) {
 							<li><a href="home.php">Home</a></li>
 							<li class="selected"><a href="report.php">New Report</a></li>
 							<li><a href="view_report.php">View Reports</a></li>
-							<li style="float: right;"><a href="../contact.php">Contact Us</a></li>
+							<li style="float: right;"><a href="contact.php"><i class="fa fa-phone"></i> Contact Us</a>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -128,31 +129,32 @@ if ($result_ward->num_rows > 0) {
 									<option value="">-- Ward --</option>
 									<?php echo $ward; ?>
 								</select>
-							<p>
-								<p>Incident Area:</p>
-								<input style="width: 97%;" class="contact"
-									placeholder="eg. shopping center, school, hotel, etc." type="text" name="place" />
-							</p>
-							<p>
-								<p>Email Address:</p>
-								<input style="width: 97%;" class="contact" placeholder="Your email(Optional)"
-									type="email" name="email" />
-							</p>
-							<p>
-								<p>Message:</p>
-								<textarea required style="max-width: 97%;min-width: 97%;min-height:100px;" class="contact textarea"
-									placeholder="Tell us what happening / happened" rows="8" cols="50" name="message"
-									id="message"></textarea>
-							</p>
-							<p>
-								<p>Incident image:</p>
-								<input type="file" id="file" onchange="check_size()" name="image" />
-								<div id="wait"></div>
-							</p>
-							<p class="form_buttons" style="padding-top: 15px">
-								<input class="submit" id="btn" onclick="submit()" type="submit" value="submit">
-								<button type="reset" class="submit">RESET</button>
-							</p>
+								<p>
+									<p>Incident Area:</p>
+									<input style="width: 97%;" class="contact"
+										placeholder="eg. shopping center, school, hotel, etc." type="text"
+										name="place" />
+								</p>
+								<p>
+									<p>Email Address:</p>
+									<input style="width: 97%;" class="contact" placeholder="Your email(Optional)"
+										type="email" name="email" />
+								</p>
+								<p>
+									<p>Message:</p>
+									<textarea required style="max-width: 97%;min-width: 97%;min-height:100px;"
+										class="contact textarea" placeholder="Tell us what happening / happened"
+										rows="8" cols="50" name="message" id="message"></textarea>
+								</p>
+								<p>
+									<p>Incident image:</p>
+									<input type="file" id="file" onchange="check_size()" name="image" />
+									<div id="wait"></div>
+								</p>
+								<p class="form_buttons" style="padding-top: 15px">
+									<input class="submit" id="btn" onclick="submit()" type="submit" value="submit">
+									<button type="reset" class="submit">RESET</button>
+								</p>
 						</div>
 					</form>
 					<div align="center">
