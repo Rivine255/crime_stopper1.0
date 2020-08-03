@@ -19,6 +19,7 @@
 					<div class="logo_img">
 						<img src="../img/logo.png" alt="NPS Logo" height="auto" width="13%"></img>
 						<div id="logo_text">
+							<!-- class="logo_colour", allows you to change the colour of the text -->
 							<h1><a class="logo_colour" href="../index.php">CrimeSTOPPERS</a></h1>
 							<h2>National Police Service</h2>
 						</div>
@@ -28,8 +29,7 @@
 					<nav>
 						<ul id="menu">
 							<li><a href="home.php">Home</a></li>
-							<li><a href="report.php">New Report</a></li>
-							<li><a href="view_report.php">View Reports</a></li>
+							<li><a href="report.php">Report</a></li>
 							<li class="selected" style="float: right;"><a href="contact.php"><i class="fa fa-phone"></i>
 									Contact Us</a></li>
 						</ul>
@@ -41,19 +41,7 @@
 					<h1>Contact Form</h1>
 				</div>
 				<div id="content">
-					<form action="save_contact.php">
-						<div class="form_settings" method="POST">
-							<p>
-								<p>Message:</p>
-								<textarea id="message" name="message" placeholder="Your message"
-									style="max-width: 97%;min-width: 97%;min-height:100px;" required></textarea>
-							</p>
-							<p class="form_buttons">
-								<input type="submit" class="submit" value="Submit">
-								<button type="reset" class="submit">RESET</button>
-							</p>
-						</div>
-					</form>
+					<p>We Already Take your Data!!</p>
 				</div>
 			</div>
 		</div>

@@ -3,6 +3,7 @@
 
 	<head>
 		<title>Anonymous Report</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
 		<meta name="description" content="website description" />
 		<meta name="keywords" content="website keywords, website keywords" />
 		<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
@@ -26,7 +27,7 @@
 				<div id="navbar">
 					<nav>
 						<ul id="menu">
-							<li><a href="../index.php">Home</a></li>
+							<li><a href="home.php">Home</a></li>
 							<li class="selected"><a href="report.php">Report</a></li>
 							<li style="float: right;"><a href="contact.php">Contact Us</a></li>
 						</ul>
