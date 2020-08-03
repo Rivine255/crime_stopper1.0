@@ -37,7 +37,7 @@ if (!isAdmin()) {
 					<nav>
 						<ul id="menu">
 							<li class="selected"><a href="home.php">Home</a></li>
-							<li style="float: right;"><a href="#">Contact Us</a></li>
+							<li><a href="create_user.php">add user</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -58,50 +58,56 @@ if (!isAdmin()) {
 				</div>
 				<?php endif ?>
 				<!-- logged in user information -->
-				
-						<?php if (isset($_SESSION['user'])) : ?>
-						<strong><?php echo $_SESSION['user']['username']; ?></strong>
-						
-                        <?php
 
-if(count($_POST)>0) {
-mysqli_query($db,"UPDATE users set username='" . $_POST['username'] . "', email='" . $_POST['email'] . "',user_type='" . $_POST['user_type'] . "' WHERE id='" . $_POST['id'] . "'");
-$message = "Record Modified Successfully";
-header("location: home.php");
-}
-$result = mysqli_query($db,"SELECT * FROM users WHERE id='" . $_GET['id'] . "'");
-$row= mysqli_fetch_array($result);
+				<?php if (isset($_SESSION['user'])) : ?>
+				<strong><?php echo $_SESSION['user']['username']; ?></strong>
 
-?>
-<html>
-<head>
-<title>Update user</title>
-</head>
-<body>
-<form name="frmUser" method="post" action="">
-<div><?php if(isset($message)) { echo $message; } ?>
-</div>
+				<?php
 
-Username: <br>
-<input type="hidden" name="id" class="txtField" value="<?php echo $row['id']; ?>">
-<input type="text" name="username"  value="<?php echo $row['username']; ?>">
-<br>
+				if (count($_POST) > 0) {
+					mysqli_query($db, "UPDATE users set username='" . $_POST['username'] . "', email='" . $_POST['email'] . "',user_type='" . $_POST['user_type'] . "' WHERE id='" . $_POST['id'] . "'");
+					$message = "Record Modified Successfully";
+					header("location: home.php");
+				}
+				$result = mysqli_query($db, "SELECT * FROM users WHERE id='" . $_GET['id'] . "'");
+				$row = mysqli_fetch_array($result);
 
-Email:<br>
-<input type="text" name="email" class="txtField" value="<?php echo $row['email']; ?>">
-<br>
-User_type:<br>
-<input type="text" name="user_type" class="txtField" value="<?php echo $row['user_type']; ?>">
-<br>
-<input type="submit" name="submit" value="Submit" class="buttom">
+				?>
+				<html>
 
-</form>
-</body>
-</html>
-						<?php endif ?>
-					</div>
-				</div>
+					<head>
+						<title>Update user</title>
+					</head>
+
+					<body>
+						<form name="frmUser" method="post" action="">
+							<div><?php if (isset($message)) {
+									echo $message;
+								} ?>
+							</div>
+
+							Username: <br>
+							<input type="hidden" name="id" class="txtField" value="<?php echo $row['id']; ?>">
+							<input type="text" name="username" value="<?php echo $row['username']; ?>">
+							<br>
+
+							Email:<br>
+							<input type="text" name="email" class="txtField" value="<?php echo $row['email']; ?>">
+							<br>
+							User_type:<br>
+							<input type="text" name="user_type" class="txtField"
+								value="<?php echo $row['user_type']; ?>">
+							<br>
+							<input type="submit" name="submit" value="Submit" class="buttom">
+
+						</form>
+					</body>
+
+				</html>
+				<?php endif ?>
 			</div>
+		</div>
+		</div>
 		</div>
 		<div id="footer">
 			<a href="../login.php" style="color: red;">logout</a>
@@ -111,4 +117,3 @@ User_type:<br>
 	</body>
 
 </html>
-

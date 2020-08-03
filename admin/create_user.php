@@ -7,7 +7,7 @@
 		<meta name="description" content="website description" />
 		<meta name="keywords" content="website keywords, website keywords" />
 		<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-		<link rel="stylesheet" type="text/css" href="../css/style.css"
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<link rel="stylesheet" type="text/css" href="../css/button.css" />
 		<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
 		<style>
@@ -33,8 +33,8 @@
 				<div id="navbar">
 					<nav>
 						<ul id="menu">
-							<li class="selected"><a href="home.php">Home</a></li>
-							<li style="float: right;"><a href="#">Contact Us</a></li>
+							<li><a href="home.php">Home</a></li>
+							<li class="selected"><a href="create_user.php">add user</a></li>
 						</ul>
 					</nav>
 				</div>
