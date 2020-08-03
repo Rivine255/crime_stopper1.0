@@ -50,7 +50,6 @@ $username = $_SESSION['user']['username'];
 						<ul id="menu">
 							<li class="selected"><a href="home.php">Home</a></li>
 							<li><a href="report.php">Report</a></li>
-							<li style="float: right;"><a href="../contact.php">Contact Us</a></li>
 						</ul>
 					</nav>
 				</div>

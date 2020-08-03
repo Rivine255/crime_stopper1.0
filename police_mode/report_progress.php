@@ -56,7 +56,6 @@ if ($results == true) {
 						<ul id="menu">
 							<li><a href="home.php">Home</a></li>
 							<li class="selected"><a href="report.php">Report</a></li>
-							<li style="float: right;"><a href="../contact.php">Contact Us</a></li>
 						</ul>
 					</nav>
 				</div>

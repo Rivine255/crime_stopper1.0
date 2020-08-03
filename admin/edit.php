@@ -32,6 +32,14 @@ if (!isAdmin()) {
 						<h2>National Police Service</h2>
 					</div>
 				</div>
+				<div id="navbar">
+					<nav>
+						<ul id="menu">
+							<li class="selected"><a href="home.php">Home</a></li>
+							<li><a href="create_user.php">add user</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 
 			<div class="profile_info">
@@ -74,7 +82,6 @@ if (!isAdmin()) {
 					</div>
 				<?php endif ?>
 				<!-- logged in user information -->
-
 				<?php if (isset($_SESSION['user'])) : ?>
 					<strong><?php echo $_SESSION['user']['username']; ?></strong>
 

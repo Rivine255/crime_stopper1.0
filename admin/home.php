@@ -7,8 +7,6 @@ if (!isAdmin()) {
 }
 
 ?>
-
-
 <!DOCTYPE html>
 <html>
 
@@ -48,14 +46,14 @@ if (!isAdmin()) {
 						<?php endif ?>
 					</div>
 				</div>
-			
-			<div id="navbar">
-				<nav>
-					<ul id="menu">
-						<li class="selected"><a href="home.php">Home</a></li>
-						<li style="float: right;"><a href="#">Contact Us</a></li>
-					</ul>
-				</nav>
+				<div id="navbar">
+					<nav>
+						<ul id="menu">
+							<li class="selected"><a href="home.php">Home</a></li>
+							<li><a href="create_user.php">add user</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</div>
 		<div id="site_content" class="content">

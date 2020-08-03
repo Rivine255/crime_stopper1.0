@@ -2,14 +2,20 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<title>Create a new user</title>
-	<meta name="description" content="website description" />
-	<meta name="keywords" content="website keywords, website keywords" />
-	<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-	<link rel="stylesheet" type="text/css" href="../css/style.css" <link rel="stylesheet" type="text/css" href="../css/button.css" />
-	<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
-</head>
+	<head>
+		<title>Registration system PHP and MySQL - Create user</title>
+		<meta name="description" content="website description" />
+		<meta name="keywords" content="website keywords, website keywords" />
+		<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/button.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
+		<style>
+		button[name=register_btn] {
+			background: #003366;
+		}
+		</style>
+	</head>
 
 <body>
 	<div id="main">
@@ -21,6 +27,14 @@
 						<h1><a class="logo_colour" href="../index.php">CrimeSTOPPERS</a></h1>
 						<h2>National Police Service</h2>
 					</div>
+				</div>
+				<div id="navbar">
+					<nav>
+						<ul id="menu">
+							<li><a href="home.php">Home</a></li>
+							<li class="selected"><a href="create_user.php">add user</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 

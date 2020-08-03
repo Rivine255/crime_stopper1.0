@@ -79,6 +79,15 @@ while ($row = $results->fetch_assoc()) {
 						<h2>National Police Service</h2>
 					</div>
 				</div>
+				<div id="navbar">
+					<nav>
+						<ul id="menu">
+							<li><a href="home.php">Home</a></li>
+							<li class="selected"><a href="report.php">Report</a></li>
+						</ul>
+					</nav>
+				</div>
+
 			</div>
 
 			<div class="profile_info">
