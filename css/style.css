@@ -558,6 +558,12 @@ select {
   box-sizing: border-box;
 }
 
+input:focus,
+textarea:focus {
+  transition: 0.5s;
+  box-shadow: 1px 0px 5px 1px navy;
+}
+
 button {
   background-color: navy;
   color: white;
