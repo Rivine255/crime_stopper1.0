@@ -10,6 +10,7 @@
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<link rel="stylesheet" href="../css/style.css">
 		<link rel="stylesheet" type="text/css" href="../css/button.css" />
+		<script src="https://kit.fontawesome.com/bf523026c9.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>

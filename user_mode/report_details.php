@@ -71,6 +71,7 @@ while ($row = $result_ward->fetch_assoc()) {
 		<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
 		<link rel="stylesheet" type="text/css" href="../css/button.css" />
+		<script src="https://kit.fontawesome.com/bf523026c9.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
@@ -92,7 +93,8 @@ while ($row = $result_ward->fetch_assoc()) {
 							<li><a href="home.php">Home</a></li>
 							<li><a href="report.php">New Report</a></li>
 							<li class="selected"><a href="view_report.php">View Reports</a></li>
-							<li style="float: right;"><a href="contact.php"><i class="fa fa-phone"></i> Contact Us</a></li>
+							<li style="float: right;"><a href="contact.php"><i class="fa fa-phone"></i> Contact Us</a>
+							</li>
 						</ul>
 					</nav>
 				</div>

@@ -39,6 +39,7 @@ while ($row = $results->fetch_assoc()) {
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
 		<link rel="stylesheet" type="text/css" href="../css/button.css" />
 		<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
+		<script src="https://kit.fontawesome.com/bf523026c9.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
