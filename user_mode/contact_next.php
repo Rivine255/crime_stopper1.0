@@ -30,7 +30,7 @@
 						<ul id="menu">
 							<li><a href="home.php">Home</a></li>
 							<li><a href="report.php">New Report</a></li>
-							<li class="selected"><a href="view_report.php">View Reports</a></li>
+							<li><a href="view_report.php">View Reports</a></li>
 							<li class="selected" style="float: right;"><a href="contact.php"><i class="fa fa-phone"></i>
 									Contact Us</a></li>
 						</ul>

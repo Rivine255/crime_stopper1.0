@@ -102,10 +102,7 @@ while ($row = $results->fetch_assoc()) {
 							<li><a href="home.php">Home</a></li>
 							<li><a href="report.php">New Report</a></li>
 							<li class="selected"><a href="view_report.php">View Reports</a></li>
-							<li style="float: right;"><a href="contact.php"><i class="fa fa-phone"></i>
-									Contact
-									Us</a>
-							</li>
+							<li style="float: right;"><a href="contact.php"><i class="fa fa-phone"></i> Contact Us</a></li>
 						</ul>
 					</nav>
 				</div>

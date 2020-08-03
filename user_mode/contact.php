@@ -29,7 +29,7 @@
 						<ul id="menu">
 							<li><a href="home.php">Home</a></li>
 							<li><a href="report.php">New Report</a></li>
-							<li class="selected"><a href="view_report.php">View Reports</a></li>
+							<li><a href="view_report.php">View Reports</a></li>
 							<li class="selected" style="float: right;"><a href="contact.php"><i class="fa fa-phone"></i>
 									Contact Us</a></li>
 						</ul>
@@ -45,10 +45,9 @@
 						<div class="form_settings" method="POST">
 							<p>
 								<p>Message:</p>
-								<textarea id="message" name="message"
+								<textarea id="message" name="message" placeholder="Your message"
 									style="max-width: 97%;min-width: 97%;min-height:100px;" required></textarea>
 							</p>
-
 							<p class="form_buttons">
 								<input type="submit" class="submit" value="Submit">
 								<button type="reset" class="submit">RESET</button>

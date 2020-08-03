@@ -69,76 +69,75 @@ while ($row = $results->fetch_assoc()) {
 	<script src="https://kit.fontawesome.com/bf523026c9.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-	<div id="main">
-		<div id="header">
-			<div id="logo">
-				<div class="logo_img">
-					<img src="../img/logo.png" alt="NPS Logo" height="auto" width="13%"></img>
-					<div id="logo_text">
-						<h1><a class="logo_colour" href="../index.php">CrimeSTOPPERS</a></h1>
-						<h2>National Police Service</h2>
+	<body>
+		<div id="main">
+			<div id="header">
+				<div id="logo">
+					<div class="logo_img">
+						<img src="../img/logo.png" alt="NPS Logo" height="auto" width="13%"></img>
+						<div id="logo_text">
+							<h1><a class="logo_colour" href="../index.php">CrimeSTOPPERS</a></h1>
+							<h2>National Police Service</h2>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="profile_info">
-				<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%">
-					<span style="float: right;">
-						<a href="../chat_box/chat_list.php"><i class="fa fa-envelope"></i></a>
-					</span>
-				</figure>
-				<div class="user_info">
-					<?php if (isset($_SESSION['user'])) : ?>
+				<div class="profile_info">
+					<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%">
+						<span style="float: right;">
+							<a href="../chat_box/chat_list.php"><i class="fa fa-2x fa-envelope"></i></a>
+						</span>
+					</figure>
+					<div class="user_info">
+						<?php if (isset($_SESSION['user'])) : ?>
 						<strong><?php echo $_SESSION['user']['username']; ?></strong>
 						<small style="font-size:15px">
 							<i style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>
 							&nbsp;
 						</small>
-					<?php endif ?>
+						<?php endif ?>
+					</div>
+				</div>
+				<div id="navbar">
+					<nav>
+						<ul id="menu">
+							<li><a href="home.php">Home</a></li>
+							<li class="selected"><a href="report.php">Report</a></li>
+							<li style="float: right;"><a href="../contact.php"><i class="fa fa-phone"></i> Contact
+									Us</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div>
-
-			<div id="navbar">
-				<nav>
-					<ul id="menu">
-						<li><a href="home.php">Home</a></li>
-						<li class="selected"><a href="report.php">Report</a></li>
-						<li style="float: right;"><a href="../contact.php"><i class="fa fa-phone"></i> Contact
-								Us</a>
-						</li>
-					</ul>
-				</nav>
+			<div id="site_content" class="content">
+				<div align="center" class="header">
+					<h1>Report list</h1>
+				</div>
+				<div id="wait"></div>
+				<div id="content">
+					<table id="report_list" border="0" id="table">
+						<tr>
+							<th>s/n</th>
+							<th>Message</th>
+							<th>Incident Area</th>
+							<th>Ward</th>
+							<th>District</th>
+							<th>Region</th>
+							<th>Date time</th>
+							<th>Progress</th>
+						</tr>
+						<?php echo $td; ?>
+					</table>
+				</div>
 			</div>
-		</div>
-		<div id="site_content" class="content">
-			<div align="center" class="header">
-				<h1>Report list</h1>
+			<div id="footer">
+				<a href="../login.php" id="logout">logout</a>
+				<br><br>
+				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
 			</div>
-			<div id="wait"></div>
-			<div id="content">
-				<table id="report_list" border="0">
-					<tr>
-						<th>s/n</th>
-						<th>Message</th>
-						<th>Incident Area</th>
-						<th>Ward</th>
-						<th>District</th>
-						<th>Region</th>
-						<th>Date time</th>
-						<th>Progress</th>
-					</tr>
-					<?php echo $td; ?>
-				</table>
-			</div>
-		</div>
-		<div id="footer">
-			<a href="../login.php" id="logout">logout</a>
-			<br><br>
-			<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
-		</div>
-		<!-- JAVASCRIPTS -->
-		<script type="text/javascript" src="../js/_crime.js"></script>
-</body>
+			<!-- JAVASCRIPTS -->
+			<script type="text/javascript" src="../js/_crime.js"></script>
+	</body>
 
 </html>

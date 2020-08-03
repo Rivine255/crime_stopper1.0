@@ -86,16 +86,14 @@ while ($row = $result_ward->fetch_assoc()) {
 						<h2>National Police Service</h2>
 					</div>
 				</div>
-			</div>
-
-			<div class="profile_info">
-				<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%">
-					<span style="float: right;">
-						<a href="../chat_box/chat_list.php"><i class="fa fa-envelope"></i></a>
-					</span>
-				</figure>
-				<div class="user_info">
-					<?php if (isset($_SESSION['user'])) : ?>
+				<div class="profile_info">
+					<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%">
+						<span style="float: right;">
+							<a href="../chat_box/chat_list.php"><i class="fa fa-2x fa-envelope"></i></a>
+						</span>
+					</figure>
+					<div class="user_info">
+						<?php if (isset($_SESSION['user'])) : ?>
 						<strong><?php echo $_SESSION['user']['username']; ?></strong>
 						<small style="font-size:15px">
 							<i style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>
