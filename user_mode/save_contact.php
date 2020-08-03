@@ -1,7 +1,7 @@
 <?php
 session_start();
 $id = $_SESSION['user']['id'];
-$username = $_SESSION['user']['username'];
+$user_username = $_SESSION['user']['username'];
 $email = $_SESSION['user']['email'];
 $today_year = date('Y');
 $today_month = date('Y-m');
@@ -19,7 +19,7 @@ if ($mysql_obj->connect_error) {
 	die("connection failed");
 }
 
-$fullname = $username;
+$fullname = $user_username;
 $message = $mysql_obj->real_escape_string($_REQUEST['message']);
 
 $sql = "INSERT INTO contact_us (fullname, user_id, email, subject, ip) VALUES ('$fullname', '$id', '$email', '$message', '$ip')";
