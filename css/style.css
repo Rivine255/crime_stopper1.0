@@ -616,17 +616,14 @@ a.register:hover {
   border-bottom: 0px solid #f1f1f1;
   border-radius: 10px;
   max-width: 20%;
-  bottom: 0;
-  right: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  top: 60px;
+  right: 1px;
+  font-family: "merriweather-bold", Arial, Helvetica, sans-serif;
   font-weight: bold;
-  box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.2);
   background-color: white;
   transition: 0.3s;
-  padding: 5px;
+  padding-bottom: 5px;
 }
-
-/* Slideshow container */
 
 .slideshow-container {
   position: relative;

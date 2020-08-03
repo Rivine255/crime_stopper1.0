@@ -23,28 +23,28 @@ $username = $_SESSION['user']['username'];
 					<div class="logo_img">
 						<img src="../img/logo.png" alt="NPS Logo" height="auto" width="13%"></img>
 						<div id="logo_text">
-							<!-- class="logo_colour", allows you to change the colour of the text -->
 							<h1><a class="logo_colour" href="../index.php">CrimeSTOPPERS</a></h1>
 							<h2>National Police Service</h2>
 						</div>
 					</div>
-					<div class="profile_info">
-						<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%">
-							<span style="float: right;">
-								<a href="../chat_box/chat_list.php"><i class="fa fa-envelope"></i></a>
-							</span>
-						</figure>
-						<div class="user_info">
-							<?php if (isset($_SESSION['user'])) : ?>
-							<strong><?php echo $_SESSION['user']['username']; ?></strong>
-							<small>
-								<i style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>
-								&nbsp;
-							</small>
-							<?php endif ?>
-						</div>
+				</div>
+				<div class="profile_info">
+					<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%">
+						<span style="float: right;">
+							<a href="../chat_box/chat_list.php"><i class="fa fa-2x fa-envelope"></i></a>
+						</span>
+					</figure>
+					<div class="user_info">
+						<?php if (isset($_SESSION['user'])) : ?>
+						<strong><?php echo $_SESSION['user']['username']; ?></strong>
+						<small style="font-size:15px">
+							<i style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>
+							&nbsp;
+						</small>
+						<?php endif ?>
 					</div>
 				</div>
+
 				<div id="navbar">
 					<nav>
 						<ul id="menu">

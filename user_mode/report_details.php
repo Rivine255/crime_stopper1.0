@@ -91,7 +91,7 @@ while ($row = $result_ward->fetch_assoc()) {
 						<ul id="menu">
 							<li><a href="home.php">Home</a></li>
 							<li><a href="report.php">New Report</a></li>
-							<li class="selected"><a href="view_report.php">Previous Report</a></li>
+							<li class="selected"><a href="view_report.php">View Reports</a></li>
 							<li style="float: right;"><a href="../contact.php">Contact Us</a></li>
 						</ul>
 					</nav>

@@ -46,7 +46,7 @@ if ($result_ward->num_rows > 0) {
 <html>
 
 	<head>
-		<title>Report</title>
+		<title>Make a new Report</title>
 		<meta name="description" content="website description" />
 		<meta name="keywords" content="website keywords, website keywords" />
 		<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
@@ -62,18 +62,31 @@ if ($result_ward->num_rows > 0) {
 					<div class="logo_img">
 						<img src="../img/logo.png" alt="NPS Logo" height="auto" width="13%"></img>
 						<div id="logo_text">
-							<!-- class="logo_colour", allows you to change the colour of the text -->
 							<h1><a class="logo_colour" href="../index.php">CrimeSTOPPERS</a></h1>
 							<h2>National Police Service</h2>
 						</div>
 					</div>
 				</div>
+
+				<div class="profile_info">
+					<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%"></figure>
+					<div class="user_info">
+						<?php if (isset($_SESSION['user'])) : ?>
+							<strong><?php echo $_SESSION['user']['username']; ?></strong>
+							<small style="font-size:15px">
+								<i style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>
+								&nbsp;
+							</small>
+						<?php endif ?>
+					</div>
+				</div>
+
 				<div id="navbar">
 					<nav>
 						<ul id="menu">
 							<li><a href="home.php">Home</a></li>
 							<li class="selected"><a href="report.php">New Report</a></li>
-							<li><a href="view_report.php">Previous Report</a></li>
+							<li><a href="view_report.php">View Reports</a></li>
 							<li style="float: right;"><a href="../contact.php">Contact Us</a></li>
 						</ul>
 					</nav>
@@ -102,7 +115,7 @@ if ($result_ward->num_rows > 0) {
 					<form action="save_report.php" method="POST" enctype="multipart/form-data">
 						<div class="form_settings">
 							<p>
-								<span>Incident Place:</span>
+								<p>Incident Place:</p>
 								<select name="region_id" onchange="show_district()">
 									<option value="">-- Region --</option>
 									<?php echo $regions; ?>
@@ -115,35 +128,35 @@ if ($result_ward->num_rows > 0) {
 									<option value="">-- Ward --</option>
 									<?php echo $ward; ?>
 								</select>
-							</p>
 							<p>
-								<span>Incident Area:</span>
-								<input style="width: 40%;" class="contact"
+								<p>Incident Area:</p>
+								<input style="width: 97%;" class="contact"
 									placeholder="eg. shopping center, school, hotel, etc." type="text" name="place" />
 							</p>
 							<p>
-								<span>Email Address:</span>
-								<input style="width: 40%;" class="contact" placeholder="Your email(Optional)"
+								<p>Email Address:</p>
+								<input style="width: 97%;" class="contact" placeholder="Your email(Optional)"
 									type="email" name="email" />
 							</p>
 							<p>
-								<span>Message:</span>
-								<textarea required style="max-width: 38.5%;min-height:30%;" class="contact textarea"
+								<p>Message:</p>
+								<textarea required style="max-width: 97%;min-width: 97%;min-height:100px;" class="contact textarea"
 									placeholder="Tell us what happening / happened" rows="8" cols="50" name="message"
 									id="message"></textarea>
 							</p>
 							<p>
-								<span>Incident image:</span>
+								<p>Incident image:</p>
 								<input type="file" id="file" onchange="check_size()" name="image" />
 								<div id="wait"></div>
 							</p>
-							<p style="padding-top: 15px">
+							<p class="form_buttons" style="padding-top: 15px">
 								<input class="submit" id="btn" onclick="submit()" type="submit" value="submit">
+								<button type="reset" class="submit">RESET</button>
 							</p>
 						</div>
 					</form>
 					<div align="center">
-						<p><br>Special thanks to You. For Your faithfully Support.<br>
+						<p><br>Special thanks to You. For Your faithful Support.<br>
 							Further Steps will take place Immediately</p>
 					</div>
 				</div>
