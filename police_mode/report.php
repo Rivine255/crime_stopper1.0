@@ -66,6 +66,7 @@ while ($row = $results->fetch_assoc()) {
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
 	<link rel="stylesheet" type="text/css" href="../css/button.css" />
 	<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
+	<script src="https://kit.fontawesome.com/bf523026c9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -79,19 +80,14 @@ while ($row = $results->fetch_assoc()) {
 						<h2>National Police Service</h2>
 					</div>
 				</div>
-				<div id="navbar">
-					<nav>
-						<ul id="menu">
-							<li><a href="home.php">Home</a></li>
-							<li class="selected"><a href="report.php">Report</a></li>
-						</ul>
-					</nav>
-				</div>
-
 			</div>
 
 			<div class="profile_info">
-				<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%"></figure>
+				<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%">
+					<span style="float: right;">
+						<a href="../chat_box/chat_list.php"><i class="fa fa-envelope"></i></a>
+					</span>
+				</figure>
 				<div class="user_info">
 					<?php if (isset($_SESSION['user'])) : ?>
 						<strong><?php echo $_SESSION['user']['username']; ?></strong>

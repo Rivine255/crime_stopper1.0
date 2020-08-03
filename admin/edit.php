@@ -18,6 +18,7 @@ if (!isAdmin()) {
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
 	<link rel="stylesheet" type="text/css" href="../css/button.css" />
 	<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
+	<script src="https://kit.fontawesome.com/bf523026c9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -32,28 +33,24 @@ if (!isAdmin()) {
 						<h2>National Police Service</h2>
 					</div>
 				</div>
-				<div id="navbar">
-					<nav>
-						<ul id="menu">
-							<li class="selected"><a href="home.php">Home</a></li>
-							<li><a href="create_user.php">add user</a></li>
-						</ul>
-					</nav>
-				</div>
 			</div>
 
 			<div class="profile_info">
-					<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%"></figure>
-					<div class="user_info">
-						<?php if (isset($_SESSION['user'])) : ?>
-							<strong><?php echo $_SESSION['user']['username']; ?></strong>
-							<small style="font-size:15px">
-								<i style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>
-								&nbsp;
-							</small>
-						<?php endif ?>
-					</div>
+				<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%">
+					<span style="float: right;">
+						<a href="../chat_box/chat_list.php"><i class="fa fa-envelope"></i></a>
+					</span>
+				</figure>
+				<div class="user_info">
+					<?php if (isset($_SESSION['user'])) : ?>
+						<strong><?php echo $_SESSION['user']['username']; ?></strong>
+						<small style="font-size:15px">
+							<i style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>
+							&nbsp;
+						</small>
+					<?php endif ?>
 				</div>
+			</div>
 
 			<div id="navbar">
 				<nav>
@@ -82,6 +79,7 @@ if (!isAdmin()) {
 					</div>
 				<?php endif ?>
 				<!-- logged in user information -->
+
 				<?php if (isset($_SESSION['user'])) : ?>
 					<strong><?php echo $_SESSION['user']['username']; ?></strong>
 
@@ -120,14 +118,14 @@ if (!isAdmin()) {
 								<p>User Type:</p>
 								<select name="user_type" id="user_type">
 									<option value="admin" <?php if ($row['user_type'] == 'admin') {
-										echo 'selected';
-									} ?> >Admin</option>
+																echo 'selected';
+															} ?>>Admin</option>
 									<option value="police" <?php if ($row['user_type'] == 'police') {
-										echo 'selected';
-									} ?>>Police</option>
+																echo 'selected';
+															} ?>>Police</option>
 									<option value="user" <?php if ($row['user_type'] == 'user') {
-										echo 'selected';
-									} ?> >User</option>
+																echo 'selected';
+															} ?>>User</option>
 								</select>
 							</div>
 

@@ -6,15 +6,16 @@ $username = $_SESSION['user']['username'];
 <!DOCTYPE HTML>
 <html>
 
-	<head>
-		<title>Home - <?php echo $username; ?></title>
-		<meta name="description" content="website description" />
-		<meta name="keywords" content="website keywords, website keywords" />
-		<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-		<link rel="stylesheet" type="text/css" href="../css/style.css" />
-		<link rel="stylesheet" type="text/css" href="../css/button.css" />
-		<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
-	</head>
+<head>
+	<title>Home - <?php echo $username; ?></title>
+	<meta name="description" content="website description" />
+	<meta name="keywords" content="website keywords, website keywords" />
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../css/button.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
+	<script src="https://kit.fontawesome.com/bf523026c9.js" crossorigin="anonymous"></script>
+</head>
 
 	<body>
 		<div id="main">
@@ -28,14 +29,16 @@ $username = $_SESSION['user']['username'];
 						</div>
 					</div>
 				</div>
-				<div class="profile_info">
-					<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%">
-						<span style="float: right;">
-							<a href="../chat_box/chat_list.php"><i class="fa fa-2x fa-envelope"></i></a>
-						</span>
-					</figure>
-					<div class="user_info">
-						<?php if (isset($_SESSION['user'])) : ?>
+			</div>
+
+			<div class="profile_info">
+				<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%">
+					<span style="float: right;">
+						<a href="../chat_box/chat_list.php"><i class="fa fa-envelope"></i></a>
+					</span>
+				</figure>
+				<div class="user_info">
+					<?php if (isset($_SESSION['user'])) : ?>
 						<strong><?php echo $_SESSION['user']['username']; ?></strong>
 						<small style="font-size:15px">
 							<i style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>

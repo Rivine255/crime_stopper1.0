@@ -397,16 +397,11 @@ a.logo_colour:hover {
   font: 90% "merriweather-regular", arial;
   border: 0;
   width: 99px;
-  margin: 0 0 0 212px;
   height: 33px;
   padding: 2px 0 3px 0;
   cursor: pointer;
   background: navy;
   color: #fff;
-}
-
-.submit {
-  margin: 0 0 0 21px;
 }
 
 .form_settings .submit:hover,
@@ -614,9 +609,9 @@ a.register:hover {
   position: absolute;
   border-top: 3px solid #f1f1f1;
   border-bottom: 0px solid #f1f1f1;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   max-width: 20%;
-  top: 60px;
+  top: 75px;
   right: 1px;
   font-family: "merriweather-bold", Arial, Helvetica, sans-serif;
   font-weight: bold;
