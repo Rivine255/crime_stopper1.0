@@ -7,8 +7,6 @@ if (!isAdmin()) {
 }
 
 ?>
-
-
 <!DOCTYPE html>
 <html>
 
@@ -58,6 +56,7 @@ if (!isAdmin()) {
 				<nav>
 					<ul id="menu">
 						<li class="selected"><a href="home.php">Home</a></li>
+						<li><a href="create_user.php">add user</a></li>
 						<li style="float: right;"><a href="#">Contact Us</a></li>
 					</ul>
 				</nav>

@@ -23,6 +23,14 @@
 						<h2>National Police Service</h2>
 					</div>
 				</div>
+				<div id="navbar">
+					<nav>
+						<ul id="menu">
+							<li><a href="home.php">Home</a></li>
+							<li class="selected"><a href="create_user.php">add user</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 
 			<div class="profile_info">

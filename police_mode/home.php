@@ -17,15 +17,16 @@ $username = $_SESSION['user']['username'];
 	<script src="https://kit.fontawesome.com/bf523026c9.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-	<div id="main">
-		<div id="header">
-			<div id="logo">
-				<div class="logo_img">
-					<img src="../img/logo.png" alt="NPS Logo" height="auto" width="13%"></img>
-					<div id="logo_text">
-						<h1><a class="logo_colour" href="../index.php">CrimeSTOPPERS</a></h1>
-						<h2>National Police Service</h2>
+	<body>
+		<div id="main">
+			<div id="header">
+				<div id="logo">
+					<div class="logo_img">
+						<img src="../img/logo.png" alt="NPS Logo" height="auto" width="13%"></img>
+						<div id="logo_text">
+							<h1><a class="logo_colour" href="../index.php">CrimeSTOPPERS</a></h1>
+							<h2>National Police Service</h2>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -43,28 +44,27 @@ $username = $_SESSION['user']['username'];
 							<i style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>
 							&nbsp;
 						</small>
-					<?php endif ?>
+						<?php endif ?>
+					</div>
+				</div>
+
+				<div id="navbar">
+					<nav>
+						<ul id="menu">
+							<li class="selected"><a href="home.php">Home</a></li>
+							<li><a href="report.php">Report</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
-
-			<div id="navbar">
-				<nav>
-					<ul id="menu">
-						<li class="selected"><a href="home.php">Home</a></li>
-						<li><a href="report.php">Report</a></li>
-						<li style="float: right;"><a href="../contact.php">Contact Us</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<div id="site_content" class="content">
-			<div align="center" class="header">
-				<h1>Home</h1>
-			</div>
-			<div id="wait"></div>
-			<div id="content">
-				<h4>
-					<?php
+			<div id="site_content" class="content">
+				<div align="center" class="header">
+					<h1>Home</h1>
+				</div>
+				<div id="wait"></div>
+				<div id="content">
+					<h4>
+						<?php
 					$time = date("H");
 					if (($time <= 11) and ($time >= 5)) {
 						echo "Good Morning $username,";
@@ -75,18 +75,18 @@ $username = $_SESSION['user']['username'];
 					} else {
 						echo "Good night $username,";
 					} ?>
-				</h4>
+					</h4>
 
+				</div>
 			</div>
-		</div>
-		<div id="footer">
-			<a href="../login.php" id="logout">logout</a>
-			<br><br>
-			<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
-		</div>
-		<!-- JAVASCRIPTS -->
-		<script type="text/javascript" src="js/ajax.js"></script>
-		<script type="text/javascript" src="js/_crime.js"></script>
-</body>
+			<div id="footer">
+				<a href="../login.php" id="logout">logout</a>
+				<br><br>
+				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
+			</div>
+			<!-- JAVASCRIPTS -->
+			<script type="text/javascript" src="js/ajax.js"></script>
+			<script type="text/javascript" src="js/_crime.js"></script>
+	</body>
 
 </html>
