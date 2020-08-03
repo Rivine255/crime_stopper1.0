@@ -86,9 +86,6 @@ while ($row = $results->fetch_assoc()) {
 						<ul id="menu">
 							<li><a href="home.php">Home</a></li>
 							<li class="selected"><a href="report.php">Report</a></li>
-							<li style="float: right;"><a href="../contact.php"><i class="fa fa-phone"></i> Contact
-									Us</a>
-							</li>
 						</ul>
 					</nav>
 				</div>
