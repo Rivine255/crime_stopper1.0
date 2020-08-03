@@ -9,7 +9,7 @@ $database = "crime";
 $table_reports = "tb_reports";
 $mysql_obj = new mysqli($servername, $username, $password, $database);
 if ($mysql_obj->connect_error) {
-	die("connection failed:" . $mysql_obj->connect_error);
+	die("connection failed");
 }
 $j = 1;
 $td = "";
