@@ -2,20 +2,15 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<title>Registration system PHP and MySQL - Create user</title>
-		<meta name="description" content="website description" />
-		<meta name="keywords" content="website keywords, website keywords" />
-		<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-		<link rel="stylesheet" type="text/css" href="../css/style.css">
-		<link rel="stylesheet" type="text/css" href="../css/button.css" />
-		<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
-		<style>
-		button[name=register_btn] {
-			background: #003366;
-		}
-		</style>
-	</head>
+<head>
+	<title>Create a new user</title>
+	<meta name="description" content="website description" />
+	<meta name="keywords" content="website keywords, website keywords" />
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" <link rel="stylesheet" type="text/css" href="../css/button.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
+	<script src="https://kit.fontawesome.com/bf523026c9.js" crossorigin="anonymous"></script>
+</head>
 
 <body>
 	<div id="main">
@@ -39,7 +34,11 @@
 			</div>
 
 			<div class="profile_info">
-				<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%"></figure>
+				<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%">
+					<span style="float: right;">
+						<a href="../chat_box/chat_list.php"><i class="fa fa-envelope"></i></a>
+					</span>
+				</figure>
 				<div class="user_info">
 					<?php if (isset($_SESSION['user'])) : ?>
 						<strong><?php echo $_SESSION['user']['username']; ?></strong>

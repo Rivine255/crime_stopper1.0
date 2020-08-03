@@ -17,6 +17,7 @@ $username = $_SESSION['user']['username'];
 		<script src="https://kit.fontawesome.com/bf523026c9.js" crossorigin="anonymous"></script>
 	</head>
 
+
 	<body>
 		<div id="main">
 			<div id="header">

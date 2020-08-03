@@ -87,7 +87,7 @@ if ($result_ward->num_rows > 0) {
 							<li><a href="home.php">Home</a></li>
 							<li class="selected"><a href="report.php">New Report</a></li>
 							<li><a href="view_report.php">View Reports</a></li>
-							<li style="float: right;"><a href="contact.php">Contact Us</a></li>
+							<li style="float: right;"><a href="contact.php"><i class="fa fa-phone"></i> Contact Us</a></li>
 						</ul>
 					</nav>
 				</div>
