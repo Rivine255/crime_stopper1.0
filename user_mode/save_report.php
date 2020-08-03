@@ -37,8 +37,8 @@ if (isset($_FILES['image'])) {
 	if (in_array($file_ext, $expensions) === false) {
 		$errors[] = "File format does not required, please choose a JPEG or PNG Immage.";
 	}
-	if ($file_size < 20480) {
-		$errors[] = 'Image size must more than 20kb';
+	if ($file_size < 1024) {
+		$errors[] = 'Image size must more than 1kb';
 	}
 	if (empty($errors) == true) {
 		$file_path = "img/reports/$today_date/$file_name";

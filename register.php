@@ -19,6 +19,7 @@
 				<div class="logo_img">
 					<img src="img/logo.png" alt="NPS Logo" height="auto" width="13%"></img>
 					<div id="logo_text">
+						<!-- class="logo_colour", allows you to change the colour of the text -->
 						<h1><a class="logo_colour" href="../index.php">CrimeSTOPPERS</a></h1>
 						<h2>National Police Service</h2>
 					</div>
@@ -41,9 +42,6 @@
 			<form method="post" action="register.php">
 				<?php echo display_error(); ?>
 				<section class="inputs">
-					<figure>
-						<img src="img/login_avatar.png" alt="Avatar" class="avatar">
-					</figure>
 					<label for="username">Username</label>
 					<input type="text" name="username" value="<?php echo $username; ?>" required>
 					<label for="email">Email</label>
@@ -54,7 +52,7 @@
 					<input type="password" name="password_2" required>
 					<span><a class="register" href="login.php">Login Instead</a></span>
 				</section>
-				<button type="submit" name="register_btn" class="submit" style="width: 100%;">Register</button>
+				<button type="submit" class="btn" name="register_btn">Register</button>
 			</form>
 		</section>
 	</div>
