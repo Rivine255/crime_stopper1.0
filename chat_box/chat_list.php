@@ -7,8 +7,10 @@ $username = $_SESSION['user']['username'];
 $user_type = $_SESSION['user']['user_type'];
 if ($user_type == "admin") {
 	$url = "../admin/home.php";
+	$report_url = "../admin/report.php";
 } else if ($user_type == "police") {
-	$url = "../police_mode/home.php";;
+	$url = "../police_mode/home.php";
+	$report_url = "../police_mode/report.php";
 }
 $found = 0;
 $k = 1;
@@ -105,8 +107,7 @@ if ($found == 1) {
 					<nav>
 						<ul id="menu">
 							<li><a href="<?php echo $url; ?>">Home</a></li>
-							<li><a href="report.php">Report</a></li>
-							<li style="float: right;"><a href="../contact.php">Contact Us</a></li>
+							<li><a href="<?php echo $report_url; ?>">Report</a></li>
 						</ul>
 					</nav>
 				</div>

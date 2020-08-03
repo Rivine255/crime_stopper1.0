@@ -93,7 +93,6 @@ while ($row = $results->fetch_assoc()) {
 						<ul id="menu">
 							<li><a href="<?php echo $url; ?>">Home</a></li>
 							<li><a href="<?php echo $report_url; ?>">Report</a></li>
-							<li style="float: right;"><a href="../contact_us/contact.php">Contact Us</a></li>
 						</ul>
 					</nav>
 				</div>
