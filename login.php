@@ -20,6 +20,7 @@
 					<div class="logo_img">
 						<img src="img/logo.png" alt="NPS Logo" height="auto" width="13%"></img>
 						<div id="logo_text">
+							<!-- class="logo_colour", allows you to change the colour of the text -->
 							<h1><a class="logo_colour" href="../index.php">CrimeSTOPPERS</a></h1>
 							<h2>National Police Service</h2>
 						</div>
@@ -51,7 +52,7 @@
 						<input type="password" name="password" placeholder="Enter Password" required>
 						<span><a class="register" href="register.php">I don't have an account</a></span>
 					</section>
-					<button type="submit" name="login_btn" class="submit" style="width: 100%">Login</button>
+					<button type="submit" name="login_btn">Login</button>
 				</form>
 			</section>
 		</div>

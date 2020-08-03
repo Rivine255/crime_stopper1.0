@@ -1,79 +1,73 @@
+@import url("font-awesome.min.css");
+
 @font-face {
-  font-family: 'merriweather-italic';
-  src: url('fonts/merriweather-italic-webfont.woff2') format('woff2'),
-       url('fonts/merriweather-italic-webfont.woff') format('woff');
+  font-family: "merriweather-italic";
+  src: url("fonts/merriweather-italic-webfont.woff2") format("woff2"),
+    url("fonts/merriweather-italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'merriweather-regular';
-  src: url('fonts/merriweather-regular-webfont.woff2') format('woff2'),
-       url('fonts/merriweather-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-@font-face {
-  font-family: 'saira_stencil_one-regular';
-  src: url('fonts/sairastencilone-regular-webfont.woff2') format('woff2'),
-       url('fonts/sairastencilone-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-@font-face {
-  font-family: 'lora-bold';
-  src: url('fonts/lora-bold-webfont.woff2') format('woff2'),
-       url('fonts/lora-bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'lora-bolditalic';
-  src: url('fonts/lora-bolditalic-webfont.woff2') format('woff2'),
-       url('fonts/lora-bolditalic-webfont.woff') format('woff');
+  font-family: "merriweather-regular";
+  src: url("fonts/merriweather-regular-webfont.woff2") format("woff2"),
+    url("fonts/merriweather-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'lora-italic';
-  src: url('fonts/lora-italic-webfont.woff2') format('woff2'),
-       url('fonts/lora-italic-webfont.woff') format('woff');
+  font-family: "saira_stencil_one-regular";
+  src: url("fonts/sairastencilone-regular-webfont.woff2") format("woff2"),
+    url("fonts/sairastencilone-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'lora-regular';
-  src: url('fonts/lora-regular-webfont.woff2') format('woff2'),
-       url('fonts/lora-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-
-@font-face {
-  font-family: 'merriweather-bold';
-  src: url('fonts/merriweather-bold-webfont.woff2') format('woff2'),
-       url('fonts/merriweather-bold-webfont.woff') format('woff');
+  font-family: "lora-bold";
+  src: url("fonts/lora-bold-webfont.woff2") format("woff2"),
+    url("fonts/lora-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'merriweather-bolditalic';
-  src: url('fonts/merriweather-bolditalic-webfont.woff2') format('woff2'),
-       url('fonts/merriweather-bolditalic-webfont.woff') format('woff');
+  font-family: "lora-bolditalic";
+  src: url("fonts/lora-bolditalic-webfont.woff2") format("woff2"),
+    url("fonts/lora-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lora-italic";
+  src: url("fonts/lora-italic-webfont.woff2") format("woff2"),
+    url("fonts/lora-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lora-regular";
+  src: url("fonts/lora-regular-webfont.woff2") format("woff2"),
+    url("fonts/lora-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "merriweather-bold";
+  src: url("fonts/merriweather-bold-webfont.woff2") format("woff2"),
+    url("fonts/merriweather-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "merriweather-bolditalic";
+  src: url("fonts/merriweather-bolditalic-webfont.woff2") format("woff2"),
+    url("fonts/merriweather-bolditalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -162,7 +156,6 @@ nav li a,
 
 .slide_link {
   display: inline;
-  float: right;
   font-family: "lora-bold", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -212,7 +205,7 @@ h6 {
   color: #362c20;
 }
 
-.edit_btn:hover {
+a {
   outline: none;
   text-decoration: underline;
   color: navy;
@@ -255,7 +248,7 @@ h6 {
 
 #header {
   background: #6f655f url(../img/header.png);
-  height: 120px;
+  height: 140px;
 }
 
 .header {
@@ -325,7 +318,8 @@ a.logo_colour:hover {
 
 #content {
   width: 100%;
-  padding-left: 50px;
+  padding-left: 40px;
+  padding-right: 50px;
   padding-bottom: 20px;
 }
 
@@ -375,13 +369,17 @@ a.logo_colour:hover {
 }
 
 .form_settings {
-  margin: auto;
-  left: 50%;
+  margin: 15px 0 0 0;
 }
 
 .form_settings p {
   padding: 0 0 4px 0;
-  font-family: "merriweather-bold";
+}
+
+.form_settings span {
+  float: left;
+  width: 200px;
+  text-align: left;
 }
 
 .form_settings input,
@@ -397,14 +395,18 @@ a.logo_colour:hover {
 .form_settings .submit,
 .submit {
   font: 90% "merriweather-regular", arial;
-  text-transform: uppercase;  
   border: 0;
-  width: 49%;
-  height: 45px;
+  width: 99px;
+  margin: 0 0 0 212px;
+  height: 33px;
   padding: 2px 0 3px 0;
   cursor: pointer;
   background: navy;
   color: #fff;
+}
+
+.submit {
+  margin: 0 0 0 21px;
 }
 
 .form_settings .submit:hover,
@@ -423,8 +425,7 @@ a.logo_colour:hover {
 }
 
 .form_settings select {
-  width: 32%;
-  height: 37px;
+  width: 20%;
   padding: 5px;
   border: 1px solid #e5e5db;
   background: #fff;
@@ -447,16 +448,18 @@ a.logo_colour:hover {
   margin: 0 0 20px 0;
 }
 
-.form_buttons {
-  position: relative;
-}
-
 button {
-  transition: 0.5s;
-  border-radius: 2px;
-  background: #fff;
-  color: navy;
-  border: 1px solid navy;
+  background-color: navy;
+  color: white;
+  outline: 0;
+  border: 0;
+  padding: 8px 0;
+  bottom: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 120%;
 }
 
 button:hover {
@@ -538,9 +541,9 @@ section.login_form form:hover {
 input[type="text"],
 input[type="password"],
 input[type="email"] {
-  width: 97%;
+  width: 100%;
   padding: 12px 20px;
-  margin-bottom: 8px;
+  margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -549,10 +552,28 @@ input[type="email"] {
 select {
   width: fit-content;
   padding: 5px 20px;
-  margin-bottom: 8px;
+  margin: 9px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+
+button {
+  background-color: navy;
+  color: white;
+  outline: 0;
+  border: 0;
+  padding: 8px 0;
+  bottom: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 120%;
+}
+
+button:hover {
+  opacity: 0.8;
 }
 
 section.login_form figure {
@@ -593,15 +614,16 @@ a.register:hover {
   position: absolute;
   border-top: 3px solid #f1f1f1;
   border-bottom: 0px solid #f1f1f1;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   max-width: 20%;
-  top: 57px;
-  right: 1px;
+  bottom: 0;
+  right: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.2);
   background-color: white;
   transition: 0.3s;
+  padding: 5px;
 }
 
 /* Slideshow container */
@@ -762,7 +784,6 @@ a.register:hover {
 
 #file {
   height: 90px;
-  width: 97%;
 }
 
 /* Add Animation */
@@ -829,6 +850,63 @@ a.register:hover {
   outline: 0;
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.671);
+}
+
+/* Chat Box */
+.chat_ground {
+  background-color: navy;
+}
+
+.chat_ground textarea {
+  padding: 10px;
+  background-color: #bbb;
+  font: 100% "merriweather-regular", arial;
+}
+
+.chat_ground textarea::placeholder {
+  text-align: center;
+}
+
+.chat_ground textarea:focus {
+  border: 1px solid navy;
+  transition: 0.5s;
+  box-shadow: 2px 0px 4px 0px navy;
+}
+
+.chat_box_user {
+  background-color: wheat;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.chat_box_recipients {
+  background-color: #1293ee;
+  width: fit-content;
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.fl_right,
+.fl_left {
+  display: inline-block;
+}
+
+.fl_right {
+  float: right;
+}
+
+.fl_left {
+  float: left;
 }
 
 /* 100% Image Width on Smaller Screens */
