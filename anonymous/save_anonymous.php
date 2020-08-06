@@ -36,8 +36,8 @@ if (isset($_FILES['file'])) {
 		$errors[] = "File format does not required, please choose a JPEG or PNG Immage.";
 		return;
 	}
-	if ($file_size < 20480) {
-		$errors[] = 'File size must more than 20kb';
+	if ($file_size < 1024) {
+		$errors[] = 'File size must more than 1kb';
 		return;
 	}
 	if ($file_size < 51200) {
