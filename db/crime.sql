@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 26, 2020 at 12:23 PM
+-- Generation Time: Aug 06, 2020 at 10:32 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.30
 
@@ -30,19 +30,74 @@ SET time_zone = "+00:00";
 CREATE TABLE `contact_us` (
   `id` int(11) NOT NULL,
   `fullname` varchar(200) NOT NULL,
+  `user_id` varchar(100) NOT NULL,
   `email` varchar(200) NOT NULL,
   `district` varchar(200) NOT NULL,
-  `subject` varchar(200) NOT NULL
+  `subject` varchar(200) NOT NULL,
+  `ip` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `contact_us`
 --
 
-INSERT INTO `contact_us` (`id`, `fullname`, `email`, `district`, `subject`) VALUES
-(1, 'Noka', 'gfdg', '', 'fggd'),
-(2, 'Kapungu', 'noelikapungu3@gmail.com', '', 'Jaman mnatenda kazi vyema'),
-(3, 'srxcgf', '', '', 'vgj ');
+INSERT INTO `contact_us` (`id`, `fullname`, `user_id`, `email`, `district`, `subject`, `ip`) VALUES
+(1, 'Noka', '', 'gfdg', '', 'fggd', ''),
+(2, 'Kapungu', '', 'noelikapungu3@gmail.com', '', 'Jaman mnatenda kazi vyema', ''),
+(3, 'srxcgf', '', '', '', 'vgj ', ''),
+(4, 'root', '6', 'test@gmil.com', '', 'I like ur services', '127.0.0.1'),
+(5, 'noka', '6', 'test@gmil.com', '', 'Nakubalii sana kazi yenu wakubwa Tupo pamoja', '127.0.0.1');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_chat`
+--
+
+CREATE TABLE `tb_chat` (
+  `id` int(11) NOT NULL,
+  `chat_room_id` int(11) DEFAULT NULL,
+  `chat_msg` text DEFAULT NULL,
+  `status` varchar(10) NOT NULL DEFAULT '0',
+  `id_user1` int(11) DEFAULT NULL,
+  `id_user2` int(11) NOT NULL,
+  `chat_date` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_chat`
+--
+
+INSERT INTO `tb_chat` (`id`, `chat_room_id`, `chat_msg`, `status`, `id_user1`, `id_user2`, `chat_date`) VALUES
+(3, 4, 'Mambo', '1', 7, 1, '2020-08-02 22:55:20'),
+(4, 4, 'safi tuu', '1', 7, 1, '2020-08-03 08:49:09'),
+(5, 4, 'Nakubaliii', '1', 7, 1, '2020-08-03 09:12:30'),
+(6, 4, 'mhsjhgxhjag', '1', 7, 1, '2020-08-03 09:16:35'),
+(7, 4, 'Poa pw mkuu', '1', 1, 7, '2020-08-03 09:25:14'),
+(8, 4, 'Sawa', '0', 7, 1, '2020-08-03 10:58:57');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_chat_room`
+--
+
+CREATE TABLE `tb_chat_room` (
+  `chat_room_id` int(11) NOT NULL,
+  `chat_room_name` varchar(255) DEFAULT NULL,
+  `last_message` varchar(2000) NOT NULL,
+  `from_user_id` int(11) NOT NULL,
+  `to_user_id` int(11) NOT NULL,
+  `status` varchar(10) NOT NULL DEFAULT '0',
+  `chat_date` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_chat_room`
+--
+
+INSERT INTO `tb_chat_room` (`chat_room_id`, `chat_room_name`, `last_message`, `from_user_id`, `to_user_id`, `status`, `chat_date`) VALUES
+(4, 'marwa-admin1', 'Sawa', 7, 1, '1', '2020-08-03 10:58:57');
 
 -- --------------------------------------------------------
 
@@ -105,6 +160,17 @@ CREATE TABLE `tb_reports` (
   `ip` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `tb_reports`
+--
+
+INSERT INTO `tb_reports` (`id`, `user_id`, `messages`, `email`, `type`, `progress`, `img_path`, `region_id`, `district_id`, `ward_id`, `incident_area`, `date_time`, `ip`) VALUES
+(1, '0', 'Herereee', '', 'ANONYMOUS', 'ON PROGRESS', 'img/reports/2020_07_26/kapungu.jpg', '2', '2', '1', 'School', '2020-07-26 18:35:36', '::1'),
+(2, '0', 'jghggfuyuiy', '', 'ANONYMOUS', 'ON PROGRESS', 'img/reports/2020_07_26/20200516_134457.jpg', '1', '1', '1', 'Hotel', '2020-07-26 23:53:31', '::1'),
+(3, '6', 'nfhhdsgjfgsd', '', 'USER', 'ON PROGRESS', 'img/reports/2020_07_26/20200516_134310.jpg', '1', '1', '1', 'dnfdsgfhs', '2020-07-26 23:58:07', '::1'),
+(4, '6', 'nbxbvcvkj', '', 'USER', 'ON PROGRESS', 'img/reports/2020_07_27/20200516_134609.jpg', '1', '1', '1', 'jkfhdsjfgdsgh', '2020-07-27 00:09:22', '::1'),
+(5, '6', 'Mtoto kaibiwa', '', 'USER', 'ACCOMPLISHED', '', '1', '2', '1', 'School', '2020-08-03 09:14:00', '::1');
+
 -- --------------------------------------------------------
 
 --
@@ -144,7 +210,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `password`) VALUES
-(1, 'admin', 'admin@gmail.com', 'admin', '202cb962ac59075b964b07152d234b70'),
+(1, 'admin1', 'admin@gmail.com', 'admin', '202cb962ac59075b964b07152d234b70'),
 (2, 'kefa', 'mdf@haj.com', 'admin', '202cb962ac59075b964b07152d234b70'),
 (6, 'noka', 'test@gmil.com', 'user', '202cb962ac59075b964b07152d234b70'),
 (7, 'marwa', 'test@gmail.com', 'police', '202cb962ac59075b964b07152d234b70'),
@@ -159,6 +225,18 @@ INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `password`) VALUES
 --
 ALTER TABLE `contact_us`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tb_chat`
+--
+ALTER TABLE `tb_chat`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tb_chat_room`
+--
+ALTER TABLE `tb_chat_room`
+  ADD PRIMARY KEY (`chat_room_id`);
 
 --
 -- Indexes for table `tb_district`
@@ -198,7 +276,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `contact_us`
 --
 ALTER TABLE `contact_us`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `tb_chat`
+--
+ALTER TABLE `tb_chat`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `tb_chat_room`
+--
+ALTER TABLE `tb_chat_room`
+  MODIFY `chat_room_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tb_district`
@@ -216,7 +306,7 @@ ALTER TABLE `tb_region`
 -- AUTO_INCREMENT for table `tb_reports`
 --
 ALTER TABLE `tb_reports`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tb_ward`
