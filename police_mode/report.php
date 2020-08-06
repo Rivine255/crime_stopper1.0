@@ -58,16 +58,16 @@ while ($row = $results->fetch_assoc()) {
 <!DOCTYPE HTML>
 <html>
 
-<head>
-	<title>List of Reports</title>
-	<meta name="description" content="website description" />
-	<meta name="keywords" content="website keywords, website keywords" />
-	<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-	<link rel="stylesheet" type="text/css" href="../css/style.css" />
-	<link rel="stylesheet" type="text/css" href="../css/button.css" />
-	<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
-	<script src="https://kit.fontawesome.com/bf523026c9.js" crossorigin="anonymous"></script>
-</head>
+	<head>
+		<title>List of Reports</title>
+		<meta name="description" content="website description" />
+		<meta name="keywords" content="website keywords, website keywords" />
+		<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/button.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
+		<script src="https://kit.fontawesome.com/bf523026c9.js" crossorigin="anonymous"></script>
+	</head>
 
 	<body>
 		<div id="main">
@@ -103,9 +103,6 @@ while ($row = $results->fetch_assoc()) {
 						<ul id="menu">
 							<li><a href="home.php">Home</a></li>
 							<li class="selected"><a href="report.php">Report</a></li>
-							<li style="float: right;"><a href="../contact.php"><i class="fa fa-phone"></i> Contact
-									Us</a>
-							</li>
 						</ul>
 					</nav>
 				</div>
