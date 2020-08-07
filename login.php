@@ -49,7 +49,8 @@
 
 						<label for="password">Password</label>
 						<input type="password" name="password" placeholder="Enter Password" required>
-						<span><a class="register" href="register.php">I don't have an account</a></span>
+						<span><a class="register" href="register.php">I don't have an account</a></span><br><br>
+						<p><a class="register" href="reset_password.php">forget password</a></p>
 					</section>
 					<button type="submit" name="login_btn" class="submit" style="width: 100%">Login</button>
 				</form>

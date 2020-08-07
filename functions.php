@@ -58,7 +58,7 @@ function reset1()
 		$sql = "UPDATE users SET password='$new_pass1' WHERE email='$email'";
 		$results = mysqli_query($db, $sql);
 		$_SESSION['SUCCESS'] = "your password has been succesful reset";
-		header('location: ../login.php');
+		header('location: login.php');
 	}
 }
 
