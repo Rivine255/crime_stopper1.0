@@ -13,7 +13,7 @@ if ($mysql_obj->connect_error) {
 }
 $j = 1;
 $td = "";
-$sql = "SELECT * FROM tb_reports WHERE progress!='ACCOMPLISHED'";
+$sql = "SELECT * FROM tb_reports";
 $results = $mysql_obj->query($sql);
 while ($row = $results->fetch_assoc()) {
 	$id = $row['id'];
@@ -102,7 +102,8 @@ while ($row = $results->fetch_assoc()) {
 					<nav>
 						<ul id="menu">
 							<li><a href="home.php">Home</a></li>
-							<li class="selected"><a href="report.php">Report</a></li>
+							<li><a href="create_user.php">add user</a></li>
+							<li class="selected"><a href="report.php">Reports</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -130,13 +131,15 @@ while ($row = $results->fetch_assoc()) {
 					</table>
 					</>
 				</div>
-				<div id="footer">
-					<a href="../login.php" id="logout">logout</a>
-					<br><br>
-					<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
-				</div>
-				<!-- JAVASCRIPTS -->
-				<script type="text/javascript" src="../js/_crime.js"></script>
+			</div>
+			<div id="footer">
+				<a href="../login.php" id="logout">logout</a>
+				<br><br>
+				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
+			</div>
+		</div>
+		<!-- JAVASCRIPTS -->
+		<script type="text/javascript" src="../js/_crime.js"></script>
 	</body>
 
 </html>

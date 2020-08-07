@@ -16,7 +16,6 @@ if (!isAdmin()) {
 		<meta name="keywords" content="website keywords, website keywords" />
 		<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
-		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="../css/button.css" />
 		<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
 		<script src="https://kit.fontawesome.com/bf523026c9.js" crossorigin="anonymous"></script>
@@ -38,7 +37,7 @@ if (!isAdmin()) {
 				<div class="profile_info">
 					<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%">
 						<span style="float: right;">
-							<a href="../chat_box/chat_list.php"><i class="fa fa-envelope"></i></a>
+							<a href="../chat_box/chat_list.php"><i class="fa fa-2x fa-envelope"></i></a>
 						</span>
 					</figure>
 					<div class="user_info">
@@ -57,7 +56,7 @@ if (!isAdmin()) {
 						<ul id="menu">
 							<li class="selected"><a href="home.php">Home</a></li>
 							<li><a href="create_user.php">add user</a></li>
-							<li style="float: right;"><a href="#">Contact Us</a></li>
+							<li><a href="report.php">Reports</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -78,7 +77,7 @@ if (!isAdmin()) {
 				</div>
 				<?php endif ?>
 				<?php $results = mysqli_query($db, "SELECT * FROM users"); ?>
-				<table id="user_list">
+				<table class="user_list" style="width:100%;">
 					<thead>
 						<tr>
 							<th>Name</th>

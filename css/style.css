@@ -211,14 +211,15 @@ a {
   color: navy;
 }
 
-#report_list a,
-#report_list a:hover {
+.report_list a,
+.report_list a:hover {
+  width: 100%;
   outline: none;
   text-decoration: underline;
   color: #40d8fe;
 }
 
-#report_list a:hover {
+.report_list a:hover {
   text-decoration: none;
   color: lightgrey;
 }
