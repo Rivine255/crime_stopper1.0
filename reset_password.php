@@ -57,7 +57,7 @@
 						<input type="password" name="password_2" required>
 						
 					</section>
-					<button type="submit" class="btn" name="reset">reset</button>
+					<button type="submit" class="submit" name="reset" style="width: 100%">reset</button>
 				</form>
 			</section>
 		</div>
