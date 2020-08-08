@@ -155,7 +155,7 @@ nav li a,
 }
 
 .slide_link {
-  display: inline;
+  display: grid;
   font-family: "lora-bold", Tahoma, Geneva, Verdana, sans-serif;
 }
 
