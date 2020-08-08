@@ -396,9 +396,11 @@ a.logo_colour:hover {
 .form_settings .submit,
 .submit {
   font: 90% "merriweather-regular", arial;
+  font-size: large;
+  text-transform: uppercase;
   border: 0;
-  width: 99px;
-  height: 33px;
+  width: 49%;
+  height: 40px;
   padding: 2px 0 3px 0;
   cursor: pointer;
   background: navy;
