@@ -513,7 +513,7 @@ table.form tr td {
   background-color: transparent;
 }
 
-section.login_form {
+/*section.login_form {
   padding: 20px;
 }
 
@@ -534,6 +534,20 @@ section.login_form form {
 
 section.login_form form:hover {
   box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.2);
+}*/
+
+img.avatar {
+  max-width: 25%;
+  min-width: 20%;
+  padding-top: 10px;
+}
+
+.error {
+  display: none;
+  font-family: "lora-bold", arial, sans-serif;
+  font-size: large;
+  color: #ae0000;
+  padding-bottom: 15px;
 }
 
 input[type="text"],

@@ -38,25 +38,36 @@
 				</nav>
 			</div>
 		</div>
+
+		<div id="site_content" class="content">
+			<div align="center" class="header">
+				<figure class="avatar">
+					<img src="img/login_avatar.png" alt="Avatar" class="avatar">
+				</figure>
+			</div>
+
+			<div id="content">
+				<form method="post" action="register.php">
+					<section class="inputs">
+						<?php echo display_error(); ?>
+						<label for="username">Username</label>
+						<input type="text" name="username" value="<?php echo $username; ?>" required>
+						<label for="email">Email</label>
+						<input type="email" name="email" placeholder="email@domain.com" value="<?php echo $email; ?>" required>
+						<label for="password_1">Password</label>
+						<input type="password" name="password_1" required>
+						<label for="password_2">Confirm password</label>
+						<input type="password" name="password_2" required>
+					</section>
+					<button type="submit" name="register_btn" class="submit" style="width: 100%;">Register</button>
+					<br><br>
+					<div align="center"><a class="register" href="login.php"><b>Login Instead</b></a></div>
+				</form>
+			</div>
+		</div>
+
 		<section class="login_form">
-			<form method="post" action="register.php">
-				<?php echo display_error(); ?>
-				<section class="inputs">
-					<figure>
-						<img src="img/login_avatar.png" alt="Avatar" class="avatar">
-					</figure>
-					<label for="username">Username</label>
-					<input type="text" name="username" value="<?php echo $username; ?>" required>
-					<label for="email">Email</label>
-					<input type="email" name="email" placeholder="email@domain.com" value="<?php echo $email; ?>" required>
-					<label for="password_1">Password</label>
-					<input type="password" name="password_1" required>
-					<label for="password_2">Confirm password</label>
-					<input type="password" name="password_2" required>
-					<span><a class="register" href="login.php">Login Instead</a></span>
-				</section>
-				<button type="submit" name="register_btn" class="submit" style="width: 100%;">Register</button>
-			</form>
+
 		</section>
 	</div>
 	<div id="footer">

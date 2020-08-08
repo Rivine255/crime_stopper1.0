@@ -160,7 +160,7 @@ function login()
 				header('location: user_mode/home.php');
 			}
 		} else {
-			array_push($errors, "Wrong username/password combination");
+			array_push($errors, "Wrong username and password combination!");
 		}
 	}
 }
@@ -195,7 +195,7 @@ function display_error()
 	global $errors;
 
 	if (count($errors) > 0) {
-		echo '<div class="error">';
+		echo '<div style="display: block" class="error">';
 		foreach ($errors as $error) {
 			echo $error . '<br>';
 		}
