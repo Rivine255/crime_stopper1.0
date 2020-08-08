@@ -102,7 +102,7 @@ User_type:<br>
 			</div>
 		</div>
 		<div id="footer">
-			<a href="../login.php" style="color: red;">logout</a>
+			<a href="../login.php" id="logout">logout</a>
 			<br><br>
 			<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
 		</div>
