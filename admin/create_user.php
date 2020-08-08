@@ -67,7 +67,7 @@
 						<p>Email</p>
 						<input type="email" name="email" value="<?php echo $email; ?>">
 
-						<p>User type</p>
+						<p>User Type</p>
 						<select name="user_type" id="user_type">
 							<option value="">--choose role--</option>
 							<option value="admin">Admin</option>

@@ -63,13 +63,13 @@ $username = $_SESSION['user']['username'];
 						<?php
 					$time = date("H");
 					if (($time <= 11) and ($time >= 5)) {
-						echo "Good Morning $username,";
+						echo "Good Morning $usernam!";
 					} elseif (($time <= 16) and ($time >= 12)) {
-						echo "Good Afternoon $username,";
+						echo "Good Afternoon $username!";
 					} elseif (($time <= 20) and ($time >= 17)) {
-						echo "Good Evening $username,";
+						echo "Good Evening $username!";
 					} else {
-						echo "Good night $username,";
+						echo "Good Evenin $username!";
 					} ?>
 					</h4>
 

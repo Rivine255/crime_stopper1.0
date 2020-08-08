@@ -103,21 +103,21 @@ if ($result_ward->num_rows > 0) {
 						<?php
 					$time = date("H");
 					if (($time <= 11) and ($time >= 5)) {
-						echo "Good Morning $_username,";
+						echo "Good Morning $_username!";
 					} elseif (($time <= 16) and ($time >= 12)) {
-						echo "Good Afternoon $_username,";
+						echo "Good Afternoon $_username!";
 					} elseif (($time <= 20) and ($time >= 17)) {
-						echo "Good Evening $_username,";
+						echo "Good Evening $_username!";
 					} else {
-						echo "Good night $_username,";
+						echo "Good Evening $_username!";
 					} ?>
 					</h4>
-					<p>Please notifying Us by Filling this Form. We granted Your Security.
-						<b>So you have nothing to worry!</b></p>
+					<p>Have you witnessed a crime? Are you a victim of a crime? Let us know!
+						<b>Help us protect and serve you!</b></p>
 					<form action="save_report.php" method="POST" enctype="multipart/form-data">
 						<div class="form_settings">
 							<p>
-								<p>Incident Place:</p>
+								<p>Incident Location:</p>
 								<select name="region_id" onchange="show_district()">
 									<option value="">-- Region --</option>
 									<?php echo $regions; ?>
@@ -133,23 +133,23 @@ if ($result_ward->num_rows > 0) {
 								<p>
 									<p>Incident Area:</p>
 									<input style="width: 97%;" class="contact"
-										placeholder="eg. shopping center, school, hotel, etc." type="text"
+										placeholder="eg. Shopping center, School, Hotel, etc." type="text"
 										name="place" />
 								</p>
 								<p>
 									<p>Email Address:</p>
-									<input style="width: 97%;" class="contact" placeholder="Your email(Optional)"
+									<input style="width: 97%;" class="contact" placeholder="Optional"
 										type="email" name="email" />
 								</p>
 								<p>
 									<p>Message:</p>
 									<textarea required style="max-width: 97%;min-width: 97%;min-height:100px;"
-										class="contact textarea" placeholder="Tell us what happening / happened"
+										class="contact textarea" placeholder="Tell us what happened"
 										rows="8" cols="50" name="message" id="message"></textarea>
 								</p>
 								<p>
 									<p>Incident image:</p>
-									<input type="file" id="file" onchange="check_size()" name="image" />
+									<input type="file" id="file" onchange="check_size()" name="image"/>
 									<div id="wait"></div>
 								</p>
 								<p class="form_buttons" style="padding-top: 15px">
@@ -159,8 +159,8 @@ if ($result_ward->num_rows > 0) {
 						</div>
 					</form>
 					<div align="center">
-						<p><br>Special thanks to You. For Your faithful Support.<br>
-							Further Steps will take place Immediately</p>
+						<p><br>Thank you for keeping our community safe.<br>
+							Your report will be investigated swiftly</p>
 					</div>
 				</div>
 			</div>
