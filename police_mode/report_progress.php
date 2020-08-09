@@ -16,12 +16,11 @@ $progress = $mysql_obj->real_escape_string($_REQUEST['progress']);
 $sql = "UPDATE tb_reports SET progress='$progress' WHERE id='$report_id'";
 $results = $mysql_obj->query($sql);
 if ($results == true) {
-	$success = "<h2>Further Steps to Take place!!</h2>
-	<p>Changes have been take place successful!!</p>
+	$success = "<h4>Your changes have been recorded successfully!</h4><br><br>
 	<a href='home.php' class='btn-success'><i class='fa fa-check'></i>&nbsp;HOME</a>";
 } else {
-	$success = "<h2>Oops!!</h2>
-	<p>Please Contact System Adminstration!!
+	$success = "<h2>Something Went Wrong! :(</h2>
+	<p>Contact your System Administrator for assistance.
 	<a href='home.php' class='btn-danger'><i class='fa fa-check'></i>&nbsp;HOME</a>";
 }
 ?>
