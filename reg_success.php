@@ -5,7 +5,7 @@
 
 <head>
 	<title>Registration Successful!</title>
-	<meta http-equiv="refresh" content="1; url=login.php" />
+	<meta http-equiv="refresh" content="2; url=login.php" />
 	<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico" />
 	<meta name="description" content="The NPS Crime Stoppers Reporting System helps you report crimes in your local area to your police.">
 	<meta name="keywords" content="police, crime, crime report, crimestoppers,">
