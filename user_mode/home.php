@@ -69,7 +69,7 @@ $username = $_SESSION['user']['username'];
 					} elseif (($time <= 20) and ($time >= 17)) {
 						echo "Good Evening $username!";
 					} else {
-						echo "Good Evenin $username!";
+						echo "Good Evening $username!";
 					} ?>
 					</h4>
 
