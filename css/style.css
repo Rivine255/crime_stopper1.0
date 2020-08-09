@@ -114,6 +114,11 @@ a.logo_colour:hover {
   color: lightgrey;
 }
 
+.edit_btn:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -512,29 +517,6 @@ table.form tr td {
   border: transparent;
   background-color: transparent;
 }
-
-/*section.login_form {
-  padding: 20px;
-}
-
-section.login_form form {
-  position: relative;
-  border-top: 3px solid #f1f1f1;
-  border-bottom: 0px solid #f1f1f1;
-  border-radius: 10px;
-  max-width: 40%;
-  min-width: 40%;
-  left: 30%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.2);
-  background-color: white;
-  transition: 0.3s;
-}
-
-section.login_form form:hover {
-  box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.2);
-}*/
 
 img.avatar {
   max-width: 25%;
