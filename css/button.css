@@ -127,8 +127,8 @@ fieldset:disabled a.btn {
 
 .btn-success:hover {
     color: #fff;
-    background-color: #17a673;
-    border-color: #169b6b
+    background-color: navy;
+    border-color: navy
 }
 
 .btn-success.focus,
@@ -244,8 +244,8 @@ fieldset:disabled a.btn {
 
 .btn-danger:hover {
     color: #fff;
-    background-color: #e02d1b;
-    border-color: #d52a1a
+    background-color: navy;
+    border-color: navy
 }
 
 .btn-danger.focus,
