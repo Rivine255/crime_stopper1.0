@@ -19,7 +19,6 @@
 					<div class="logo_img">
 						<img src="../img/logo.png" alt="NPS Logo" height="auto" width="13%"></img>
 						<div id="logo_text">
-							<!-- class="logo_colour", allows you to change the colour of the text -->
 							<h1><a class="logo_colour" href="../index.php">CrimeSTOPPERS</a></h1>
 							<h2>National Police Service</h2>
 						</div>
@@ -41,8 +40,8 @@
 					<h1>Your Report has been sent!</h1>
 				</div>
 				<div id="content">
-					<h2>THANKS FOR YOUR SUPPORT!!</h2>
-					<p>Your personal Info is Secured!! <br> <b>Have a Great Time</b></p>
+					<h2>Thank you for keeping our community safe!</h2>
+					<p>Your report will be reviewed by one of our trusted officers.</p>
 					<a href="home.php" class="btn-success"><i class="fa fa-check"></i>&nbsp; HOME</a>
 				</div>
 			</div>
