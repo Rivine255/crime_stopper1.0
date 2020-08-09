@@ -116,19 +116,20 @@ if ($result_ward->num_rows > 0) {
 							</p>
 							<p>
 								<p>Incident Area:</p>
-								<input style="width: 97%;" class="contact"
+								<input style="width: 97%;" class="contact" required
 									placeholder="eg. Shopping center, School, Hotel, etc." type="text" name="place" />
 							</p>
 							<p>
 								<p>Email Address:</p>
-								<input style="width: 97%;" class="contact" placeholder="Optional"
-									type="email" name="email" />
+								<input style="width: 97%;" class="contact" placeholder="Optional" type="email"
+									name="email" />
 							</p>
 							<p>
 								<p>Message:</p>
-								<textarea required style="max-width: 97%; min-width: 97%; min-height: 100px; margin: 0px;" class="contact textarea"
-									placeholder="Tell us what happened" rows="8" cols="50" name="message"
-									id="message"></textarea>
+								<textarea required
+									style="max-width: 97%; min-width: 97%; min-height: 100px; margin: 0px;"
+									class="contact textarea" placeholder="Tell us what happened" rows="8" cols="50"
+									name="message" id="message"></textarea>
 							</p>
 							<p>
 								<p>Incident image:</p>
@@ -136,7 +137,7 @@ if ($result_ward->num_rows > 0) {
 								<div id="wait">You can drag your file in the box above.</div>
 							</p>
 							<p class="form_buttons" style="padding-top: 15px">
-								<input class="submit" id="btn" onclick="submit()" type="submit" value="submit">
+								<input class="submit" id="btn" type="submit" value="submit">
 								<button type="reset" class="submit">RESET</button>
 							</p>
 						</div>

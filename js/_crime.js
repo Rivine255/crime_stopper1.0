@@ -1,11 +1,4 @@
-function submit() {
-    var message = document.getElementById("message").value;
-    if (message == "") {
-        document.getElementById("wait").innerHTML = "Please Your Message is Mandatory";
-    }
-}
-
-window.onscroll = function () {
+window.onscroll = function() {
     makeSticky();
 };
 
@@ -76,13 +69,13 @@ var modal = document.getElementById("myModal");
 var img = document.getElementById("image");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function () {
+img.onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 };
 
 var span = document.getElementsByClassName("close")[0];
-span.onclick = function () {
+span.onclick = function() {
     modal.style.display = "none";
 };
