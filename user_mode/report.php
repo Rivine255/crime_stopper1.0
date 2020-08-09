@@ -160,7 +160,7 @@ if ($result_ward->num_rows > 0) {
 					</form>
 					<div align="center">
 						<p><br>Thank you for keeping our community safe.<br>
-							Your report will be investigated swiftly</p>
+							Your report will be investigated swiftly!</p>
 					</div>
 				</div>
 			</div>
