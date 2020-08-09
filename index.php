@@ -42,21 +42,19 @@
 				<div class="slideshow-container">
 					<div class="slide">
 						<img class="img_slide" src="img/woman_police.jpg" style="width:100%">
-						<div class="text">Police Officer in Gender office.
-							<a href="login.php" class="slide_link">IMPROVISE ADAPT UHH 🤔🤔🤔</a>
+						<div class="text">Welcome to CrimeStoppers! Don't have an account?
+							<a href="register.php" class="slide_link">REGISTER AN ACCOUNT FOR FREE</a>
 						</div>
 					</div>
 					<div class="slide">
 						<img class="img_slide" src="img/man_police.jpg" style="width:100%">
-						<div class="text">Te debitis pericula expetendis sea,
-							sea no doctus invenire. Ea lorem ridens percipitur vim,
-							alia postea deseruisse eu nec.
-							<a href="login.php" class="slide_link">REPORT THE CRIME YOU SAW</a></div>
+						<div class="text">Did you witness a crime? Are you a victim of a crime?
+							<a href="anonymous/anonymous.php" class="slide_link">REPORT THE CRIME YOU SAW</a></div>
 					</div>
 					<div class="slide">
 						<img class="img_slide" src="img/police_band.jpg" style="width:100%">
-						<div class="text">Police Music 😎😎.
-							<a href="login.php" class="slide_link">BE THE CHANGE YOU SEEK 🍑🍑🍑</a>
+						<div class="text">Have an account?
+							<a href="login.php" class="slide_link">LOGIN TO CRIMESTOPPERS</a>
 						</div>
 					</div>
 					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -66,12 +64,19 @@
 
 				<div id="site_content" class="content">
 					<div align="center" class="header">
-						<h1>WHO WE ARE</h1>
+						<h1>INTRODUCING CRIMESTOPPERS</h1>
 					</div>
 					<div id="wait"></div>
 					<div id="content">
 						<h4>Protecting and Serving</h4>
-						<p>We protecc, we servv. <b>But most importantly snacc.</b></p>
+						<p>CrimeSTOPPERS helps protect your community.</p>
+						<h4>Location and Time?</h4>
+						<p>Report crimes in your neighbourhood anywhere, 
+						any time.</p>
+						<h4>Instantaneous Response</h4>
+						<p>Get instant, realtime updates to your reports.
+						</p>
+						<b>It's Justice, a click away!</b>
 					</div>
 				</div>
 			</div>
