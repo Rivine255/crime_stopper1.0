@@ -128,15 +128,15 @@ while ($row = $results->fetch_assoc()) {
 						</tr>
 						<?php echo $td; ?>
 					</table>
-					</>
 				</div>
-				<div id="footer">
-					<a href="../login.php" id="logout">logout</a>
-					<br><br>
-					<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
-				</div>
-				<!-- JAVASCRIPTS -->
-				<script type="text/javascript" src="../js/_crime.js"></script>
+			</div>
+			<div id="footer">
+				<a href="../login.php" id="logout">logout</a>
+				<br><br>
+				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
+			</div>
+			<!-- JAVASCRIPTS -->
+			<script type="text/javascript" src="../js/_crime.js"></script>
 	</body>
 
 </html>

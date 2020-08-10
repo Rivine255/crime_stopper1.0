@@ -28,7 +28,8 @@
 					<nav>
 						<ul id="menu">
 							<li><a href="home.php">Home</a></li>
-							<li class="selected"><a href="report.php">Report</a></li>
+							<li class="selected"><a href="report.php">New Report</a></li>
+							<li><a href="view_report.php">View Reports</a></li>
 							<li style="float: right;"><a href="contact.php"><i class="fa fa-phone"></i> Contact Us</a>
 							</li>
 						</ul>
@@ -46,7 +47,7 @@
 				</div>
 			</div>
 			<div id="footer">
-				<a href="login.php" style="color: red;">logout</a>
+				<a href="../login.php" style="color: red;">logout</a>
 				<br><br>
 				<p>Copyright &copy; Rivine <?php echo date("Y"); ?> All Rights Reserved.</p>
 			</div>
