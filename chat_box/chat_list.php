@@ -92,7 +92,7 @@ if ($found == 1) {
 			<div class="profile_info">
 					<figure class="user_avatar"><img src="../img/admin_profile.png" width="5%">
 						<span style="float: right;">
-							<a href="../chat_box/chat_list.php"><i class="fa fa-2x fa-envelope"></i></a>
+							<a href="chat_list.php"><i class="fa fa-2x fa-envelope"></i></a>
 						</span>
 					</figure>
 					<div class="user_info">

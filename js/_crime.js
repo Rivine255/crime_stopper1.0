@@ -32,7 +32,7 @@ function check_size() {
     numb = numb.toFixed(2);
     if (numb > 25) {
         document.getElementById("btn").disabled = true;
-        wait.innerHTML = 'to big, maximum is 25MB. You file size is: ' + numb + ' MB';
+        wait.innerHTML = 'Too big, maximum is 25MB. You file size is: ' + numb + ' MB';
         file.style.borderColor = "red";
     } else {
         document.getElementById("btn").disabled = false;
